@@ -40,7 +40,7 @@ You can open this file directly in Microsoft Excel, Google Sheets, Apple Numbers
 
 ---
 
-## 2. Executive Summary for Non-Technical Stakeholders
+## 2. Executive Summary 
 
 ### The Problem It Solves
 Tracking startup investments manually requires analysts to spend dozens of hours every week reading news articles across multiple websites, searching through corporate announcements, copying numbers into spreadsheets, converting currencies, and verifying whether a startup fits target investment themes. This manual process is slow, prone to human error, and misses emerging deals.
