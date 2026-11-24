@@ -1,34 +1,5 @@
 [
   {
-    "company_name": "VC funding rebounds as startups",
-    "company_website": null,
-    "company_description": null,
-    "headquarters_country": "India",
-    "headquarters_city": null,
-    "operating_countries": [],
-    "funding_stage": "Other",
-    "funding_amount": 255000000.0,
-    "currency": "USD",
-    "original_amount_text": "$255M",
-    "lead_investor": null,
-    "investors": [],
-    "primary_category": null,
-    "secondary_categories": [],
-    "relevance_status": "NOT_RELEVANT",
-    "relevance_score": 0.0,
-    "confidence_score": 0.85,
-    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
-    "announcement_date": null,
-    "article_publication_date": "2026-11-23",
-    "supporting_evidence": {
-      "company_name": "VC funding rebounds as startups raise $255",
-      "funding_amount": "VC funding rebounds as startups raise $255M; Women founders driving social change"
-    },
-    "source_url": "https://yourstory.com/2026/11/vc-funding-rebounds-women-founders-social-change",
-    "source_name": "YourStory",
-    "article_title": "VC funding rebounds as startups raise $255M; Women founders driving social change"
-  },
-  {
     "company_name": "Ionic Wealth",
     "company_website": null,
     "company_description": "wealthtech platform and a subsidiary of Angel One",
@@ -63,20 +34,18 @@
     "article_title": "Ionic Wealth secures Rs 177 Cr from Angel One, others"
   },
   {
-    "company_name": "IIFL Finance to",
+    "company_name": "VC funding rebounds as startups",
     "company_website": null,
     "company_description": null,
-    "headquarters_country": null,
+    "headquarters_country": "India",
     "headquarters_city": null,
     "operating_countries": [],
-    "funding_stage": "Growth",
-    "funding_amount": 64140000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 6,414 Cr",
-    "lead_investor": "Blackstone\n\nIIFL Finance to raise Rs 6",
-    "investors": [
-      "Blackstone\n\nIIFL Finance to raise Rs 6"
-    ],
+    "funding_stage": "Other",
+    "funding_amount": 255000000.0,
+    "currency": "USD",
+    "original_amount_text": "$255M",
+    "lead_investor": null,
+    "investors": [],
     "primary_category": null,
     "secondary_categories": [],
     "relevance_status": "NOT_RELEVANT",
@@ -84,16 +53,43 @@
     "confidence_score": 0.85,
     "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
     "announcement_date": null,
-    "article_publication_date": "2026-11-10",
+    "article_publication_date": "2026-11-23",
     "supporting_evidence": {
-      "company_name": "IIFL Finance to raise Rs",
-      "funding_amount": "IIFL Finance to raise Rs 6,414 Cr led by Blackstone\n\nIIFL Finance to rais",
-      "funding_stage": "growth",
-      "investors": "led by Blackstone\n\nIIFL Finance to raise Rs 6,"
+      "company_name": "VC funding rebounds as startups raise $255",
+      "funding_amount": "VC funding rebounds as startups raise $255M; Women founders driving social change"
     },
-    "source_url": "https://yourstory.com/2026/11/iifl-finance-to-raise-rs-6414-crore-with-blackstone-leading-rs-5000-crore-primary-infusion",
+    "source_url": "https://yourstory.com/2026/11/vc-funding-rebounds-women-founders-social-change",
     "source_name": "YourStory",
-    "article_title": "IIFL Finance to raise Rs 6,414 Cr led by Blackstone"
+    "article_title": "VC funding rebounds as startups raise $255M; Women founders driving social change"
+  },
+  {
+    "company_name": "eri Credits and Capital Limited",
+    "company_website": null,
+    "company_description": "listed Indian company with interests including securities and investments",
+    "headquarters_country": "India",
+    "headquarters_city": null,
+    "operating_countries": [],
+    "funding_stage": "Other",
+    "funding_amount": 176010000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 17,601 crore",
+    "lead_investor": null,
+    "investors": [],
+    "primary_category": "Wealth Management",
+    "secondary_categories": [],
+    "relevance_status": "DIRECT_MATCH",
+    "relevance_score": 0.82,
+    "confidence_score": 0.75,
+    "qualification_reason": "Direct alignment with Wealth Management based on product matches: family office. Verified headquarters in India",
+    "announcement_date": null,
+    "article_publication_date": "2026-09-29",
+    "supporting_evidence": {
+      "company_name": "eri Credits and Capital Limited, a listed Indian company with interests including securities and investments, has ",
+      "funding_amount": "vertising on e-retail platforms reached Rs 17,601 crore in 2025, up 55.9% year on year, accordi"
+    },
+    "source_url": "https://yourstory.com/2026/09/adani-family-office-backs-nudge-as-startup-pivots-to-rewards-led-commerce",
+    "source_name": "YourStory",
+    "article_title": "Adani Family Office backs Nudge as startup pivots to rewards-led commerce"
   },
   {
     "company_name": "Matiks",
@@ -163,6 +159,36 @@
     "article_title": "Peppermint Robotics bags Rs 100 Cr in pre-Series B funding round"
   },
   {
+    "company_name": "Rotoris",
+    "company_website": null,
+    "company_description": null,
+    "headquarters_country": "India",
+    "headquarters_city": "Gurugram",
+    "operating_countries": [],
+    "funding_stage": "Series A",
+    "funding_amount": 700000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 70 Cr",
+    "lead_investor": null,
+    "investors": [],
+    "primary_category": null,
+    "secondary_categories": [],
+    "relevance_status": "NOT_RELEVANT",
+    "relevance_score": 0.0,
+    "confidence_score": 0.85,
+    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
+    "announcement_date": null,
+    "article_publication_date": "2026-10-27",
+    "supporting_evidence": {
+      "company_name": "Rotoris bags Rs",
+      "funding_amount": "Rotoris bags Rs 70 Cr to expand its luxury watch business\n\nRo",
+      "funding_stage": "Series A"
+    },
+    "source_url": "https://yourstory.com/2026/10/rotoris-bags-rs-70-cr-to-expand-its-luxury-watch-business",
+    "source_name": "YourStory",
+    "article_title": "Rotoris bags Rs 70 Cr to expand its luxury watch business"
+  },
+  {
     "company_name": "Cyient Semiconductors",
     "company_website": null,
     "company_description": null,
@@ -194,39 +220,6 @@
     "source_url": "https://yourstory.com/2026/11/cyient-semiconductors-bags-usd-10m-from-globalfoundries",
     "source_name": "YourStory",
     "article_title": "Cyient Semiconductors bags $10M from GlobalFoundries"
-  },
-  {
-    "company_name": "Live2.ai",
-    "company_website": "https://live2.ai",
-    "company_description": "uses artificial intelligence (AI) to connect social-media intelligence with marketing and commerce",
-    "headquarters_country": "India",
-    "headquarters_city": "Bengaluru",
-    "operating_countries": [],
-    "funding_stage": "Series B",
-    "funding_amount": 1300000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 130 Cr",
-    "lead_investor": "VC firm IvyCap Ventures",
-    "investors": [
-      "VC firm IvyCap Ventures"
-    ],
-    "primary_category": null,
-    "secondary_categories": [],
-    "relevance_status": "NOT_RELEVANT",
-    "relevance_score": 0.0,
-    "confidence_score": 0.85,
-    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
-    "announcement_date": null,
-    "article_publication_date": "2026-10-27",
-    "supporting_evidence": {
-      "company_name": "Live2.ai raises Rs",
-      "funding_amount": "Live2.ai raises Rs 130 Cr to expand its AI-led social commerce pl",
-      "funding_stage": "Series B",
-      "investors": "led by VC firm IvyCap Ventures,"
-    },
-    "source_url": "https://yourstory.com/2026/10/live2ai-raises-rs-130-cr-to-expand-its-ai-led-social-commerce-platform",
-    "source_name": "YourStory",
-    "article_title": "Live2.ai raises Rs 130 Cr to expand its AI-led social commerce platform"
   },
   {
     "company_name": "Pant Project",
@@ -262,193 +255,6 @@
     "article_title": "The Pant Project bags Rs 109 Cr to accelerate retail expansion"
   },
   {
-    "company_name": "PowerUp Money",
-    "company_website": null,
-    "company_description": "wealthtech platform offering mutual fund advice and digital wealth management services",
-    "headquarters_country": "India",
-    "headquarters_city": "Bengaluru",
-    "operating_countries": [],
-    "funding_stage": "Other",
-    "funding_amount": 10000000.0,
-    "currency": "USD",
-    "original_amount_text": "$10M",
-    "lead_investor": "Flourish Ventures",
-    "investors": [
-      "Flourish Ventures"
-    ],
-    "primary_category": "Wealth Management",
-    "secondary_categories": [],
-    "relevance_status": "DIRECT_MATCH",
-    "relevance_score": 0.93,
-    "confidence_score": 0.87,
-    "qualification_reason": "Direct alignment with Wealth Management based on product matches: wealth management, wealthtech, digital wealth. Verified headquarters in India (Bengaluru)",
-    "announcement_date": null,
-    "article_publication_date": "2026-11-03",
-    "supporting_evidence": {
-      "company_name": "PowerUp Money raises $10",
-      "funding_amount": "PowerUp Money raises $10M to expand AI-led wealth management\n\nPow",
-      "investors": "led by Flourish Ventures,"
-    },
-    "source_url": "https://yourstory.com/2026/11/powerup-money-raises-10m-expand-ai-led-wealth-management-india",
-    "source_name": "YourStory",
-    "article_title": "PowerUp Money raises $10M to expand AI-led wealth management"
-  },
-  {
-    "company_name": "eri Credits and Capital Limited",
-    "company_website": null,
-    "company_description": "listed Indian company with interests including securities and investments",
-    "headquarters_country": "India",
-    "headquarters_city": null,
-    "operating_countries": [],
-    "funding_stage": "Other",
-    "funding_amount": 176010000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 17,601 crore",
-    "lead_investor": null,
-    "investors": [],
-    "primary_category": "Wealth Management",
-    "secondary_categories": [],
-    "relevance_status": "DIRECT_MATCH",
-    "relevance_score": 0.82,
-    "confidence_score": 0.75,
-    "qualification_reason": "Direct alignment with Wealth Management based on product matches: family office. Verified headquarters in India",
-    "announcement_date": null,
-    "article_publication_date": "2026-09-29",
-    "supporting_evidence": {
-      "company_name": "eri Credits and Capital Limited, a listed Indian company with interests including securities and investments, has ",
-      "funding_amount": "vertising on e-retail platforms reached Rs 17,601 crore in 2025, up 55.9% year on year, accordi"
-    },
-    "source_url": "https://yourstory.com/2026/09/adani-family-office-backs-nudge-as-startup-pivots-to-rewards-led-commerce",
-    "source_name": "YourStory",
-    "article_title": "Adani Family Office backs Nudge as startup pivots to rewards-led commerce"
-  },
-  {
-    "company_name": "Bharat Semi",
-    "company_website": null,
-    "company_description": null,
-    "headquarters_country": "United States",
-    "headquarters_city": "New York",
-    "operating_countries": [],
-    "funding_stage": "Seed",
-    "funding_amount": 24000000.0,
-    "currency": "USD",
-    "original_amount_text": "$24M",
-    "lead_investor": "Info Edge",
-    "investors": [
-      "Info Edge"
-    ],
-    "primary_category": null,
-    "secondary_categories": [],
-    "relevance_status": "NOT_RELEVANT",
-    "relevance_score": 0.0,
-    "confidence_score": 0.85,
-    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
-    "announcement_date": null,
-    "article_publication_date": "2026-11-16",
-    "supporting_evidence": {
-      "company_name": "Bharat Semi raises $24",
-      "funding_amount": "Bharat Semi raises $24M to develop AI-enabled sensors\n\nBharat S",
-      "funding_stage": "seed funding",
-      "investors": "led by Info Edge,"
-    },
-    "source_url": "https://yourstory.com/2026/11/bharat-semi-raises-24m-to-develop-ai-enabled-sensors",
-    "source_name": "YourStory",
-    "article_title": "Bharat Semi raises $24M to develop AI-enabled sensors"
-  },
-  {
-    "company_name": "NABARD-backed NABVENTURES",
-    "company_website": null,
-    "company_description": "venture capital arm of the National Bank for Agriculture and Rural Development (NABARD)",
-    "headquarters_country": "India",
-    "headquarters_city": null,
-    "operating_countries": [],
-    "funding_stage": "Growth",
-    "funding_amount": 4500000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 450 Cr",
-    "lead_investor": "NABVENTURES",
-    "investors": [
-      "NABVENTURES",
-      "KisaanSay"
-    ],
-    "primary_category": null,
-    "secondary_categories": [],
-    "relevance_status": "NOT_RELEVANT",
-    "relevance_score": 0.0,
-    "confidence_score": 0.85,
-    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
-    "announcement_date": null,
-    "article_publication_date": "2026-10-09",
-    "supporting_evidence": {
-      "company_name": "NABARD-backed NABVENTURES raises Rs",
-      "funding_amount": "NABARD-backed NABVENTURES raises Rs 450 Cr for second fund\n\nNABARD-backed NABVENTU",
-      "funding_stage": "growth",
-      "investors": "led by NABVENTURES and KisaanSay,"
-    },
-    "source_url": "https://yourstory.com/2026/10/nabventures-hits-rs-450-crore-first-close-for-second-fund",
-    "source_name": "YourStory",
-    "article_title": "NABARD-backed NABVENTURES raises Rs 450 Cr for second fund"
-  },
-  {
-    "company_name": "Rotoris",
-    "company_website": null,
-    "company_description": null,
-    "headquarters_country": "India",
-    "headquarters_city": "Gurugram",
-    "operating_countries": [],
-    "funding_stage": "Series A",
-    "funding_amount": 700000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 70 Cr",
-    "lead_investor": null,
-    "investors": [],
-    "primary_category": null,
-    "secondary_categories": [],
-    "relevance_status": "NOT_RELEVANT",
-    "relevance_score": 0.0,
-    "confidence_score": 0.85,
-    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
-    "announcement_date": null,
-    "article_publication_date": "2026-10-27",
-    "supporting_evidence": {
-      "company_name": "Rotoris bags Rs",
-      "funding_amount": "Rotoris bags Rs 70 Cr to expand its luxury watch business\n\nRo",
-      "funding_stage": "Series A"
-    },
-    "source_url": "https://yourstory.com/2026/10/rotoris-bags-rs-70-cr-to-expand-its-luxury-watch-business",
-    "source_name": "YourStory",
-    "article_title": "Rotoris bags Rs 70 Cr to expand its luxury watch business"
-  },
-  {
-    "company_name": "ValueQuest Investment Advisors",
-    "company_website": null,
-    "company_description": "Mumbai-based investment manager",
-    "headquarters_country": "India",
-    "headquarters_city": "Mumbai",
-    "operating_countries": [],
-    "funding_stage": "Other",
-    "funding_amount": 7750000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 775 Cr",
-    "lead_investor": null,
-    "investors": [],
-    "primary_category": null,
-    "secondary_categories": [],
-    "relevance_status": "NOT_RELEVANT",
-    "relevance_score": 0.0,
-    "confidence_score": 0.85,
-    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
-    "announcement_date": null,
-    "article_publication_date": "2026-11-12",
-    "supporting_evidence": {
-      "company_name": "ValueQuest Investment Advisors, a Mumbai-based investment manager, has ",
-      "funding_amount": "ValueQuest commits Rs 775 Cr to advance India\u2019s defence, manufacturi"
-    },
-    "source_url": "https://yourstory.com/2026/11/valuequest-commits-rs-775-cr-to-advance-indias-defence-manufacturing-push",
-    "source_name": "YourStory",
-    "article_title": "ValueQuest commits Rs 775 Cr to advance India\u2019s defence, manufacturing push"
-  },
-  {
     "company_name": "Style Union",
     "company_website": null,
     "company_description": "parent company of value-fashion retailer Style Union",
@@ -480,39 +286,6 @@
     "source_url": "https://yourstory.com/2026/11/style-union-raises-rs-485-cr-to-expand-beyond-southern-india",
     "source_name": "YourStory",
     "article_title": "Style Union raises Rs 485 Cr to expand beyond southern India"
-  },
-  {
-    "company_name": "Seeds Fincap Pvt Ltd",
-    "company_website": null,
-    "company_description": "non-baking financial company (NBFC) supporting small Indian businesses",
-    "headquarters_country": null,
-    "headquarters_city": null,
-    "operating_countries": [],
-    "funding_stage": "Series B",
-    "funding_amount": 1000000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 100 Cr",
-    "lead_investor": "the Michael & Susan Dell Foundation",
-    "investors": [
-      "the Michael & Susan Dell Foundation"
-    ],
-    "primary_category": null,
-    "secondary_categories": [],
-    "relevance_status": "NOT_RELEVANT",
-    "relevance_score": 0.0,
-    "confidence_score": 0.85,
-    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
-    "announcement_date": null,
-    "article_publication_date": "2026-10-01",
-    "supporting_evidence": {
-      "company_name": "Seeds Fincap Pvt Ltd, a non-baking financial company (NBFC) supporting small Indian businesses, has ",
-      "funding_amount": "Seeds Fincap secures over Rs 100 Cr in Series B led by Michael & Susan Dell",
-      "funding_stage": "Series B",
-      "investors": "led by the Michael & Susan Dell Foundation."
-    },
-    "source_url": "https://yourstory.com/2026/10/seeds-fincap-rs-100-cr-series-b-round-michael-susan-dell-foundation",
-    "source_name": "YourStory",
-    "article_title": "Seeds Fincap secures over Rs 100 Cr in Series B led by Michael & Susan Dell Foundation"
   },
   {
     "company_name": "Botsync",
@@ -548,6 +321,133 @@
     "article_title": "Botsync raises $11M to expand industrial automation"
   },
   {
+    "company_name": "IIFL Finance to",
+    "company_website": null,
+    "company_description": null,
+    "headquarters_country": null,
+    "headquarters_city": null,
+    "operating_countries": [],
+    "funding_stage": "Growth",
+    "funding_amount": 64140000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 6,414 Cr",
+    "lead_investor": "Blackstone\n\nIIFL Finance to raise Rs 6",
+    "investors": [
+      "Blackstone\n\nIIFL Finance to raise Rs 6"
+    ],
+    "primary_category": null,
+    "secondary_categories": [],
+    "relevance_status": "NOT_RELEVANT",
+    "relevance_score": 0.0,
+    "confidence_score": 0.85,
+    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
+    "announcement_date": null,
+    "article_publication_date": "2026-11-10",
+    "supporting_evidence": {
+      "company_name": "IIFL Finance to raise Rs",
+      "funding_amount": "IIFL Finance to raise Rs 6,414 Cr led by Blackstone\n\nIIFL Finance to rais",
+      "funding_stage": "growth",
+      "investors": "led by Blackstone\n\nIIFL Finance to raise Rs 6,"
+    },
+    "source_url": "https://yourstory.com/2026/11/iifl-finance-to-raise-rs-6414-crore-with-blackstone-leading-rs-5000-crore-primary-infusion",
+    "source_name": "YourStory",
+    "article_title": "IIFL Finance to raise Rs 6,414 Cr led by Blackstone"
+  },
+  {
+    "company_name": "ValueQuest Investment Advisors",
+    "company_website": null,
+    "company_description": "Mumbai-based investment manager",
+    "headquarters_country": "India",
+    "headquarters_city": "Mumbai",
+    "operating_countries": [],
+    "funding_stage": "Other",
+    "funding_amount": 7750000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 775 Cr",
+    "lead_investor": null,
+    "investors": [],
+    "primary_category": null,
+    "secondary_categories": [],
+    "relevance_status": "NOT_RELEVANT",
+    "relevance_score": 0.0,
+    "confidence_score": 0.85,
+    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
+    "announcement_date": null,
+    "article_publication_date": "2026-11-12",
+    "supporting_evidence": {
+      "company_name": "ValueQuest Investment Advisors, a Mumbai-based investment manager, has ",
+      "funding_amount": "ValueQuest commits Rs 775 Cr to advance India\u2019s defence, manufacturi"
+    },
+    "source_url": "https://yourstory.com/2026/11/valuequest-commits-rs-775-cr-to-advance-indias-defence-manufacturing-push",
+    "source_name": "YourStory",
+    "article_title": "ValueQuest commits Rs 775 Cr to advance India\u2019s defence, manufacturing push"
+  },
+  {
+    "company_name": "Bharat Semi",
+    "company_website": null,
+    "company_description": null,
+    "headquarters_country": "United States",
+    "headquarters_city": "New York",
+    "operating_countries": [],
+    "funding_stage": "Seed",
+    "funding_amount": 24000000.0,
+    "currency": "USD",
+    "original_amount_text": "$24M",
+    "lead_investor": "Info Edge",
+    "investors": [
+      "Info Edge"
+    ],
+    "primary_category": null,
+    "secondary_categories": [],
+    "relevance_status": "NOT_RELEVANT",
+    "relevance_score": 0.0,
+    "confidence_score": 0.85,
+    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
+    "announcement_date": null,
+    "article_publication_date": "2026-11-16",
+    "supporting_evidence": {
+      "company_name": "Bharat Semi raises $24",
+      "funding_amount": "Bharat Semi raises $24M to develop AI-enabled sensors\n\nBharat S",
+      "funding_stage": "seed funding",
+      "investors": "led by Info Edge,"
+    },
+    "source_url": "https://yourstory.com/2026/11/bharat-semi-raises-24m-to-develop-ai-enabled-sensors",
+    "source_name": "YourStory",
+    "article_title": "Bharat Semi raises $24M to develop AI-enabled sensors"
+  },
+  {
+    "company_name": "PowerUp Money",
+    "company_website": null,
+    "company_description": "wealthtech platform offering mutual fund advice and digital wealth management services",
+    "headquarters_country": "India",
+    "headquarters_city": "Bengaluru",
+    "operating_countries": [],
+    "funding_stage": "Other",
+    "funding_amount": 10000000.0,
+    "currency": "USD",
+    "original_amount_text": "$10M",
+    "lead_investor": "Flourish Ventures",
+    "investors": [
+      "Flourish Ventures"
+    ],
+    "primary_category": "Wealth Management",
+    "secondary_categories": [],
+    "relevance_status": "DIRECT_MATCH",
+    "relevance_score": 0.93,
+    "confidence_score": 0.87,
+    "qualification_reason": "Direct alignment with Wealth Management based on product matches: wealth management, wealthtech, digital wealth. Verified headquarters in India (Bengaluru)",
+    "announcement_date": null,
+    "article_publication_date": "2026-11-03",
+    "supporting_evidence": {
+      "company_name": "PowerUp Money raises $10",
+      "funding_amount": "PowerUp Money raises $10M to expand AI-led wealth management\n\nPow",
+      "investors": "led by Flourish Ventures,"
+    },
+    "source_url": "https://yourstory.com/2026/11/powerup-money-raises-10m-expand-ai-led-wealth-management-india",
+    "source_name": "YourStory",
+    "article_title": "PowerUp Money raises $10M to expand AI-led wealth management"
+  },
+  {
     "company_name": "Metasports Interactive",
     "company_website": null,
     "company_description": "Hyderabad-based maker of cricket strategy game Hitwicket",
@@ -579,6 +479,106 @@
     "source_url": "https://yourstory.com/2026/11/sachin-tendulkar-backs-hitwicket-maker-metasports-interactive",
     "source_name": "YourStory",
     "article_title": "Sachin Tendulkar backs Hitwicket maker Metasports Interactive"
+  },
+  {
+    "company_name": "Live2.ai",
+    "company_website": "https://live2.ai",
+    "company_description": "uses artificial intelligence (AI) to connect social-media intelligence with marketing and commerce",
+    "headquarters_country": "India",
+    "headquarters_city": "Bengaluru",
+    "operating_countries": [],
+    "funding_stage": "Series B",
+    "funding_amount": 1300000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 130 Cr",
+    "lead_investor": "VC firm IvyCap Ventures",
+    "investors": [
+      "VC firm IvyCap Ventures"
+    ],
+    "primary_category": null,
+    "secondary_categories": [],
+    "relevance_status": "NOT_RELEVANT",
+    "relevance_score": 0.0,
+    "confidence_score": 0.85,
+    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
+    "announcement_date": null,
+    "article_publication_date": "2026-10-27",
+    "supporting_evidence": {
+      "company_name": "Live2.ai raises Rs",
+      "funding_amount": "Live2.ai raises Rs 130 Cr to expand its AI-led social commerce pl",
+      "funding_stage": "Series B",
+      "investors": "led by VC firm IvyCap Ventures,"
+    },
+    "source_url": "https://yourstory.com/2026/10/live2ai-raises-rs-130-cr-to-expand-its-ai-led-social-commerce-platform",
+    "source_name": "YourStory",
+    "article_title": "Live2.ai raises Rs 130 Cr to expand its AI-led social commerce platform"
+  },
+  {
+    "company_name": "Seeds Fincap Pvt Ltd",
+    "company_website": null,
+    "company_description": "non-baking financial company (NBFC) supporting small Indian businesses",
+    "headquarters_country": null,
+    "headquarters_city": null,
+    "operating_countries": [],
+    "funding_stage": "Series B",
+    "funding_amount": 1000000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 100 Cr",
+    "lead_investor": "the Michael & Susan Dell Foundation",
+    "investors": [
+      "the Michael & Susan Dell Foundation"
+    ],
+    "primary_category": null,
+    "secondary_categories": [],
+    "relevance_status": "NOT_RELEVANT",
+    "relevance_score": 0.0,
+    "confidence_score": 0.85,
+    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
+    "announcement_date": null,
+    "article_publication_date": "2026-10-01",
+    "supporting_evidence": {
+      "company_name": "Seeds Fincap Pvt Ltd, a non-baking financial company (NBFC) supporting small Indian businesses, has ",
+      "funding_amount": "Seeds Fincap secures over Rs 100 Cr in Series B led by Michael & Susan Dell",
+      "funding_stage": "Series B",
+      "investors": "led by the Michael & Susan Dell Foundation."
+    },
+    "source_url": "https://yourstory.com/2026/10/seeds-fincap-rs-100-cr-series-b-round-michael-susan-dell-foundation",
+    "source_name": "YourStory",
+    "article_title": "Seeds Fincap secures over Rs 100 Cr in Series B led by Michael & Susan Dell Foundation"
+  },
+  {
+    "company_name": "NABARD-backed NABVENTURES",
+    "company_website": null,
+    "company_description": "venture capital arm of the National Bank for Agriculture and Rural Development (NABARD)",
+    "headquarters_country": "India",
+    "headquarters_city": null,
+    "operating_countries": [],
+    "funding_stage": "Growth",
+    "funding_amount": 4500000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 450 Cr",
+    "lead_investor": "NABVENTURES",
+    "investors": [
+      "NABVENTURES",
+      "KisaanSay"
+    ],
+    "primary_category": null,
+    "secondary_categories": [],
+    "relevance_status": "NOT_RELEVANT",
+    "relevance_score": 0.0,
+    "confidence_score": 0.85,
+    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
+    "announcement_date": null,
+    "article_publication_date": "2026-10-09",
+    "supporting_evidence": {
+      "company_name": "NABARD-backed NABVENTURES raises Rs",
+      "funding_amount": "NABARD-backed NABVENTURES raises Rs 450 Cr for second fund\n\nNABARD-backed NABVENTU",
+      "funding_stage": "growth",
+      "investors": "led by NABVENTURES and KisaanSay,"
+    },
+    "source_url": "https://yourstory.com/2026/10/nabventures-hits-rs-450-crore-first-close-for-second-fund",
+    "source_name": "YourStory",
+    "article_title": "NABARD-backed NABVENTURES raises Rs 450 Cr for second fund"
   },
   {
     "company_name": "NIIF to boost infra projects",
@@ -640,34 +640,6 @@
     "article_title": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios"
   },
   {
-    "company_name": "On Monday",
-    "company_website": null,
-    "company_description": "newly public AI company",
-    "headquarters_country": null,
-    "headquarters_city": null,
-    "operating_countries": [],
-    "funding_stage": "Other",
-    "funding_amount": null,
-    "currency": null,
-    "original_amount_text": null,
-    "lead_investor": null,
-    "investors": [],
-    "primary_category": null,
-    "secondary_categories": [],
-    "relevance_status": "NOT_RELEVANT",
-    "relevance_score": 0.0,
-    "confidence_score": 0.85,
-    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
-    "announcement_date": null,
-    "article_publication_date": "2026-11-23",
-    "supporting_evidence": {
-      "company_name": "On Monday, the newly public AI company announced"
-    },
-    "source_url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
-    "source_name": "TechCrunch",
-    "article_title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes"
-  },
-  {
     "company_name": "Last week",
     "company_website": null,
     "company_description": "Commerce Department also",
@@ -694,6 +666,34 @@
     "source_url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist",
     "source_name": "TechCrunch",
     "article_title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist"
+  },
+  {
+    "company_name": "On Monday",
+    "company_website": null,
+    "company_description": "newly public AI company",
+    "headquarters_country": null,
+    "headquarters_city": null,
+    "operating_countries": [],
+    "funding_stage": "Other",
+    "funding_amount": null,
+    "currency": null,
+    "original_amount_text": null,
+    "lead_investor": null,
+    "investors": [],
+    "primary_category": null,
+    "secondary_categories": [],
+    "relevance_status": "NOT_RELEVANT",
+    "relevance_score": 0.0,
+    "confidence_score": 0.85,
+    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
+    "announcement_date": null,
+    "article_publication_date": "2026-11-23",
+    "supporting_evidence": {
+      "company_name": "On Monday, the newly public AI company announced"
+    },
+    "source_url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
+    "source_name": "TechCrunch",
+    "article_title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes"
   },
   {
     "company_name": "critically",
@@ -754,39 +754,6 @@
     "article_title": "DeepSeek reportedly raises $15B days after US restrictions"
   },
   {
-    "company_name": "Airbnb-backed WeRoad",
-    "company_website": null,
-    "company_description": "Milan-based group travel startup",
-    "headquarters_country": null,
-    "headquarters_city": null,
-    "operating_countries": [],
-    "funding_stage": "Series C",
-    "funding_amount": 58000000.0,
-    "currency": "USD",
-    "original_amount_text": "$58M",
-    "lead_investor": "Airbnb as it prepares for its first major expansion outside Europe",
-    "investors": [
-      "Airbnb as it prepares for its first major expansion outside Europe"
-    ],
-    "primary_category": null,
-    "secondary_categories": [],
-    "relevance_status": "NOT_RELEVANT",
-    "relevance_score": 0.0,
-    "confidence_score": 0.85,
-    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
-    "announcement_date": null,
-    "article_publication_date": "2026-05-27",
-    "supporting_evidence": {
-      "company_name": "Airbnb-backed WeRoad raises $58",
-      "funding_amount": "Airbnb-backed WeRoad raises $58M to take its group travel platform to th",
-      "funding_stage": "Series C",
-      "investors": "led by Airbnb as it prepares for its first major expansion outside Europe."
-    },
-    "source_url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us",
-    "source_name": "TechCrunch",
-    "article_title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US"
-  },
-  {
     "company_name": "Viral AI  Instinct has",
     "company_website": null,
     "company_description": "startup founded only last year and helmed by a 23-year-old",
@@ -821,22 +788,19 @@
     "article_title": "Viral AI startup Instinct has raised $350M at a $2.5B valuation"
   },
   {
-    "company_name": "Convective Capital",
+    "company_name": "Wispr",
     "company_website": null,
     "company_description": null,
-    "headquarters_country": "United States",
+    "headquarters_country": null,
     "headquarters_city": null,
     "operating_countries": [],
-    "funding_stage": "Other",
-    "funding_amount": 85000000.0,
+    "funding_stage": "Series B",
+    "funding_amount": 280000000.0,
     "currency": "USD",
-    "original_amount_text": "$85 million",
-    "lead_investor": "Bill Clerico",
+    "original_amount_text": "$280M",
+    "lead_investor": "Menlo Ventures",
     "investors": [
-      "Bill Clerico",
-      "institutions",
-      "including insurance companies",
-      "asset managers"
+      "Menlo Ventures"
     ],
     "primary_category": null,
     "secondary_categories": [],
@@ -845,15 +809,16 @@
     "confidence_score": 0.85,
     "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
     "announcement_date": null,
-    "article_publication_date": "2026-05-21",
+    "article_publication_date": "2026-08-17",
     "supporting_evidence": {
-      "company_name": "Convective Capital raises an $85",
-      "funding_amount": "Convective Capital raises an $85 million fund to build disaster resilience\n\nFire",
-      "investors": "led by Bill Clerico,; backed by institutions, including insurance companies and asset managers."
+      "company_name": "Wispr raises $280",
+      "funding_amount": "Wispr raises $280M at $2B valuation as it looks beyond dic",
+      "funding_stage": "Series B",
+      "investors": "led by Menlo Ventures,"
     },
-    "source_url": "https://techcrunch.com/2026/05/21/convective-capital-raises-an-85-million-fund-to-build-disaster-resilience",
+    "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
     "source_name": "TechCrunch",
-    "article_title": "Convective Capital raises an $85 million fund to build disaster resilience"
+    "article_title": "Wispr raises $280M at $2B valuation as it looks beyond dictation"
   },
   {
     "company_name": "AI chip maker SambaNova",
@@ -889,19 +854,19 @@
     "article_title": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round"
   },
   {
-    "company_name": "Wispr",
+    "company_name": "Airbnb-backed WeRoad",
     "company_website": null,
-    "company_description": null,
+    "company_description": "Milan-based group travel startup",
     "headquarters_country": null,
     "headquarters_city": null,
     "operating_countries": [],
-    "funding_stage": "Series B",
-    "funding_amount": 280000000.0,
+    "funding_stage": "Series C",
+    "funding_amount": 58000000.0,
     "currency": "USD",
-    "original_amount_text": "$280M",
-    "lead_investor": "Menlo Ventures",
+    "original_amount_text": "$58M",
+    "lead_investor": "Airbnb as it prepares for its first major expansion outside Europe",
     "investors": [
-      "Menlo Ventures"
+      "Airbnb as it prepares for its first major expansion outside Europe"
     ],
     "primary_category": null,
     "secondary_categories": [],
@@ -910,16 +875,51 @@
     "confidence_score": 0.85,
     "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
     "announcement_date": null,
-    "article_publication_date": "2026-08-17",
+    "article_publication_date": "2026-05-27",
     "supporting_evidence": {
-      "company_name": "Wispr raises $280",
-      "funding_amount": "Wispr raises $280M at $2B valuation as it looks beyond dic",
-      "funding_stage": "Series B",
-      "investors": "led by Menlo Ventures,"
+      "company_name": "Airbnb-backed WeRoad raises $58",
+      "funding_amount": "Airbnb-backed WeRoad raises $58M to take its group travel platform to th",
+      "funding_stage": "Series C",
+      "investors": "led by Airbnb as it prepares for its first major expansion outside Europe."
     },
-    "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
+    "source_url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us",
     "source_name": "TechCrunch",
-    "article_title": "Wispr raises $280M at $2B valuation as it looks beyond dictation"
+    "article_title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US"
+  },
+  {
+    "company_name": "Convective Capital",
+    "company_website": null,
+    "company_description": null,
+    "headquarters_country": "United States",
+    "headquarters_city": null,
+    "operating_countries": [],
+    "funding_stage": "Other",
+    "funding_amount": 85000000.0,
+    "currency": "USD",
+    "original_amount_text": "$85 million",
+    "lead_investor": "Bill Clerico",
+    "investors": [
+      "Bill Clerico",
+      "institutions",
+      "including insurance companies",
+      "asset managers"
+    ],
+    "primary_category": null,
+    "secondary_categories": [],
+    "relevance_status": "NOT_RELEVANT",
+    "relevance_score": 0.0,
+    "confidence_score": 0.85,
+    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
+    "announcement_date": null,
+    "article_publication_date": "2026-05-21",
+    "supporting_evidence": {
+      "company_name": "Convective Capital raises an $85",
+      "funding_amount": "Convective Capital raises an $85 million fund to build disaster resilience\n\nFire",
+      "investors": "led by Bill Clerico,; backed by institutions, including insurance companies and asset managers."
+    },
+    "source_url": "https://techcrunch.com/2026/05/21/convective-capital-raises-an-85-million-fund-to-build-disaster-resilience",
+    "source_name": "TechCrunch",
+    "article_title": "Convective Capital raises an $85 million fund to build disaster resilience"
   },
   {
     "company_name": "Meridian",
@@ -1243,6 +1243,39 @@
     "article_title": "Data Security Startup Matters.AI Nets \u20b9115 Cr From Tanglin Venture Partners, Others"
   },
   {
+    "company_name": "Zavya",
+    "company_website": null,
+    "company_description": null,
+    "headquarters_country": null,
+    "headquarters_city": null,
+    "operating_countries": [],
+    "funding_stage": "Series A",
+    "funding_amount": 226000000.0,
+    "currency": "INR",
+    "original_amount_text": "\u20b922.6 Cr",
+    "lead_investor": null,
+    "investors": [
+      "existing investor Orios Venture Partners"
+    ],
+    "primary_category": null,
+    "secondary_categories": [],
+    "relevance_status": "NOT_RELEVANT",
+    "relevance_score": 0.0,
+    "confidence_score": 0.85,
+    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
+    "announcement_date": null,
+    "article_publication_date": "2026-11-23",
+    "supporting_evidence": {
+      "company_name": "Zavya Nets \u20b922.6",
+      "funding_amount": "Zavya Nets \u20b922.6 Cr To Scale Everyday Silver Jewellery Biz",
+      "funding_stage": "Series A",
+      "investors": "with participation from existing investor Orios Venture Partners."
+    },
+    "source_url": "https://inc42.com/buzz/zavya-nets-%E2%82%B922-6-cr-to-scale-everyday-silver-jewellery-biz",
+    "source_name": "Inc42",
+    "article_title": "Zavya Nets \u20b922.6 Cr To Scale Everyday Silver Jewellery Biz"
+  },
+  {
     "company_name": "Motilal Oswal AMC",
     "company_website": "https://fleekies.ai",
     "company_description": "quick commerce unicorn",
@@ -1281,39 +1314,6 @@
     "article_title": "Indian Startup IPO Tracker 2026"
   },
   {
-    "company_name": "Zavya",
-    "company_website": null,
-    "company_description": null,
-    "headquarters_country": null,
-    "headquarters_city": null,
-    "operating_countries": [],
-    "funding_stage": "Series A",
-    "funding_amount": 226000000.0,
-    "currency": "INR",
-    "original_amount_text": "\u20b922.6 Cr",
-    "lead_investor": null,
-    "investors": [
-      "existing investor Orios Venture Partners"
-    ],
-    "primary_category": null,
-    "secondary_categories": [],
-    "relevance_status": "NOT_RELEVANT",
-    "relevance_score": 0.0,
-    "confidence_score": 0.85,
-    "qualification_reason": "No match with target private markets, wealthtech, or alternative assets categories.",
-    "announcement_date": null,
-    "article_publication_date": "2026-11-23",
-    "supporting_evidence": {
-      "company_name": "Zavya Nets \u20b922.6",
-      "funding_amount": "Zavya Nets \u20b922.6 Cr To Scale Everyday Silver Jewellery Biz",
-      "funding_stage": "Series A",
-      "investors": "with participation from existing investor Orios Venture Partners."
-    },
-    "source_url": "https://inc42.com/buzz/zavya-nets-%E2%82%B922-6-cr-to-scale-everyday-silver-jewellery-biz",
-    "source_name": "Inc42",
-    "article_title": "Zavya Nets \u20b922.6 Cr To Scale Everyday Silver Jewellery Biz"
-  },
-  {
     "company_name": "Forge Global",
     "company_website": "https://forgeglobal.com",
     "company_description": null,
@@ -1344,7 +1344,7 @@
       "investors": "with participation from Temasek and Wells Fargo Strategic Capital.",
       "announcement_date": "structure provider, announced on January 15, 2025 that it has secured"
     },
-    "source_url": "https://techcrunch.com/2025/01/15/forge-global-secures-40m-growth-round",
+    "source_url": "https://techcrunch.com/?s=Forge+Global",
     "source_name": "TechCrunch",
     "article_title": "Forge Global secures $40M Growth round to expand pre-IPO investment platform"
   },
@@ -1379,7 +1379,7 @@
       "funding_stage": "Series A",
       "investors": "led by Blume Ventures with participation; with participation from Inflection Point Ventures and prominent angel investors."
     },
-    "source_url": "https://inc42.com/buzz/precize-bags-inr-25-cr-series-a-for-unlisted-shares-platform",
+    "source_url": "https://inc42.com/?s=Precize",
     "source_name": "Inc42",
     "article_title": "Precize bags INR 25 Cr Series A to scale pre-IPO shares platform"
   },
@@ -1416,7 +1416,7 @@
       "investors": "led by Bessemer Venture Partners with participation; with participation from FinTech Collective.",
       "announcement_date": "anagement platform, announced on April 20, 2025 that it closed an $"
     },
-    "source_url": "https://businesswire.com/news/home/20250420/altura-markets-secures-18m-series-a",
+    "source_url": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm=Altura+Markets",
     "source_name": "Business Wire",
     "article_title": "Altura Markets secures $18M Series A for private credit portfolio management"
   },
@@ -1452,7 +1452,7 @@
       "investors": "led by Peak XV Partners with participation; with participation from Alteria Capital and Surge.",
       "announcement_date": "for digital brands, announced on March 12, 2025 that it raised INR"
     },
-    "source_url": "https://yourstory.com/2025/03/klub-raises-inr-65-cr-series-a-private-credit",
+    "source_url": "https://yourstory.com/search?q=Klub",
     "source_name": "YourStory",
     "article_title": "Klub raises INR 65 Cr Series A to expand private credit platform"
   },
@@ -1487,7 +1487,7 @@
       "investors": "led by Silver Lake with participation; with participation from Andreessen Horowitz and Lightspeed Venture Partners.",
       "announcement_date": "rastructure leader, announced on May 10, 2025 that it raised $150"
     },
-    "source_url": "https://techcrunch.com/2025/05/10/carta-secures-150m-series-g",
+    "source_url": "https://techcrunch.com/?s=Carta",
     "source_name": "TechCrunch",
     "article_title": "Carta secures $150M Series G for private market secondary trading infrastructure"
   },
@@ -1522,7 +1522,7 @@
       "investors": "led by Worldquant Ventures with participation; with participation from Adams Street Partners.",
       "announcement_date": "ny stock liquidity, announced on June 22, 2025 that it secured $15"
     },
-    "source_url": "https://prnewswire.com/news-releases/equityzen-secures-15m-growth-round",
+    "source_url": "https://www.prnewswire.com/search/news/?keyword=EquityZen",
     "source_name": "PR Newswire",
     "article_title": "EquityZen secures $15M Growth round for pre-IPO secondary share trading"
   },
@@ -1557,7 +1557,7 @@
       "investors": "led by Morgan Stanley with participation; with participation from Credit Suisse.",
       "announcement_date": "ivate equity stock, announced on July 19, 2025 that it raised $20"
     },
-    "source_url": "https://venturebeat.com/2025/07/19/zanbato-lands-20m-series-b",
+    "source_url": "https://venturebeat.com/?s=Zanbato",
     "source_name": "VentureBeat",
     "article_title": "Zanbato lands $20M Series B for private market alternative trading system"
   },
@@ -1592,7 +1592,7 @@
       "investors": "led by Brooklyn Capital with participation; with participation from Forward VC.",
       "announcement_date": "te market unicorns, announced on August 11, 2025 that it closed a $3"
     },
-    "source_url": "https://businesswire.com/news/home/20250811/linqto-secures-30m-series-b",
+    "source_url": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm=Linqto",
     "source_name": "Business Wire",
     "article_title": "Linqto secures $30M Series B for pre-IPO liquidity and private equity investment"
   },
@@ -1627,7 +1627,7 @@
       "investors": "led by Marquee HNI Syndicate with participation; with participation from AngelList India.",
       "announcement_date": "search marketplace, announced on April 14, 2025 that it raised INR"
     },
-    "source_url": "https://yourstory.com/2025/04/14/unlistedkart-bags-inr-18-cr-seed",
+    "source_url": "https://yourstory.com/search?q=UnlistedKart",
     "source_name": "YourStory",
     "article_title": "UnlistedKart bags INR 18 Cr Seed round for unlisted shares investment platform"
   },
@@ -1661,7 +1661,7 @@
       "investors": "led by Ashika Capital with participation",
       "announcement_date": "equity investment, announced on September 20, 2025 that it raised INR"
     },
-    "source_url": "https://inc42.com/buzz/planify-secures-inr-30-cr-series-a",
+    "source_url": "https://inc42.com/?s=Planify",
     "source_name": "Inc42",
     "article_title": "Planify secures INR 30 Cr Series A for pre-IPO startup investment platform"
   },
@@ -1695,7 +1695,7 @@
       "investors": "led by Cactus Partners.",
       "announcement_date": "e equity investors, announced on March 17, 2025 that it raised INR"
     },
-    "source_url": "https://entrackr.com/2025/03/17/1lattice-raises-inr-40-cr-series-a",
+    "source_url": "https://entrackr.com/?s=1Lattice",
     "source_name": "Entrackr",
     "article_title": "1Lattice raises INR 40 Cr Series A for private market research and data analytics"
   },
@@ -1730,7 +1730,7 @@
       "investors": "led by White Star Capital with participation; with participation from BMO Capital.",
       "announcement_date": "structure provider, announced on August 29, 2025 that it closed a $3"
     },
-    "source_url": "https://techcrunch.com/2025/08/29/percent-secures-30m-series-b",
+    "source_url": "https://techcrunch.com/?s=Percent",
     "source_name": "TechCrunch",
     "article_title": "Percent secures $30M Series B for private credit and debt platform"
   },
@@ -1765,7 +1765,7 @@
       "investors": "led by Insight Partners with participation; with participation from Fidelity International Strategic Ventures.",
       "announcement_date": "rtfolio management, announced on September 12, 2025 that it raised $125"
     },
-    "source_url": "https://businesswire.com/news/home/20250912/moonfare-closes-125m-series-c",
+    "source_url": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm=Moonfare",
     "source_name": "Business Wire",
     "article_title": "Moonfare closes $125M Series C for digital private equity platform"
   },
@@ -1802,7 +1802,7 @@
       "investors": "led by Tiger Global with participation; with participation from Accomplice.",
       "announcement_date": "und administration, announced on June 18, 2025 that it raised $100"
     },
-    "source_url": "https://venturebeat.com/2025/06/18/angellist-raises-100m-series-b",
+    "source_url": "https://venturebeat.com/?s=AngelList+Venture",
     "source_name": "VentureBeat",
     "article_title": "AngelList Venture raises $100M Series B for private market investment infrastructure"
   },
@@ -1837,7 +1837,7 @@
       "investors": "led by Manipal Group with participation; with participation from high net worth family offices.",
       "announcement_date": "io management firm, announced on October 5, 2025 that it raised INR"
     },
-    "source_url": "https://inc42.com/buzz/incred-alternative-finance-secures-inr-100-cr",
+    "source_url": "https://inc42.com/?s=InCred+Alternative+Finance",
     "source_name": "Inc42",
     "article_title": "InCred Alternative Finance secures INR 100 Cr Growth round for private debt"
   },
@@ -1872,7 +1872,7 @@
       "investors": "led by 9Unicorns with participation; with participation from Better Capital.",
       "announcement_date": "and startup equity, announced on July 21, 2025 that it raised INR"
     },
-    "source_url": "https://yourstory.com/2025/07/21/tyke-raises-inr-20-cr-pre-series-a",
+    "source_url": "https://yourstory.com/search?q=Tyke",
     "source_name": "YourStory",
     "article_title": "Tyke raises INR 20 Cr Pre-Series A for private investment platform"
   },
@@ -1907,7 +1907,7 @@
       "investors": "led by Valor Equity Partners with participation; with participation from Galaxy Interactive.",
       "announcement_date": "ondary marketplace, announced on September 25, 2025 that it raised $150"
     },
-    "source_url": "https://techcrunch.com/2025/09/25/republic-lands-150m-series-b",
+    "source_url": "https://techcrunch.com/?s=Republic",
     "source_name": "TechCrunch",
     "article_title": "Republic lands $150M Series B for private market investment marketplace"
   },
@@ -1942,7 +1942,7 @@
       "investors": "led by BlackRock with participation; with participation from Hamilton Lane.",
       "announcement_date": "issuance platform, announced on June 30, 2025 that it raised $47"
     },
-    "source_url": "https://businesswire.com/news/home/20250630/securitize-secures-47m-strategic",
+    "source_url": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm=Securitize",
     "source_name": "Business Wire",
     "article_title": "Securitize secures $47M Strategic round for tokenized private market securities"
   },
@@ -1976,7 +1976,7 @@
       "investors": "led by TVS Capital Funds.",
       "announcement_date": "nal asset managers, announced on November 15, 2025 that it raised INR"
     },
-    "source_url": "https://inc42.com/buzz/vivriti-asset-tech-secures-inr-80-cr-series-b",
+    "source_url": "https://inc42.com/?s=Vivriti+Asset+Tech",
     "source_name": "Inc42",
     "article_title": "Vivriti Asset Tech secures INR 80 Cr Series B for enterprise private debt platform"
   },
@@ -2011,7 +2011,7 @@
       "investors": "led by General Catalyst with participation; with participation from Bain Capital Ventures.",
       "announcement_date": "m for LP interests, announced on October 18, 2025 that it raised $14"
     },
-    "source_url": "https://venturebeat.com/2025/10/18/altway-markets-raises-14m-series-a",
+    "source_url": "https://venturebeat.com/?s=Altway+Markets",
     "source_name": "VentureBeat",
     "article_title": "Altway Markets raises $14M Series A for private equity secondary transactions"
   },
@@ -2047,7 +2047,7 @@
       "investors": "led by Mayfair Equity Partners with participation; with participation from Greycroft and Edison Partners.",
       "announcement_date": "anagement platform, announced on May 18, 2025 that it secured $50"
     },
-    "source_url": "https://techcrunch.com/2025/05/18/yieldstreet-lands-50m-series-d",
+    "source_url": "https://techcrunch.com/?s=Yieldstreet",
     "source_name": "TechCrunch",
     "article_title": "Yieldstreet lands $50M Series D for alternative asset management platform"
   },
@@ -2082,7 +2082,7 @@
       "funding_stage": "Series B",
       "investors": "led by Stride Ventures with participation; with participation from LC Nueva and Venture Highway."
     },
-    "source_url": "https://entrackr.com/2025/06/14/grip-invest-bags-inr-35-cr-series-b",
+    "source_url": "https://entrackr.com/?s=Grip+Invest",
     "source_name": "Entrackr",
     "article_title": "Grip Invest bags INR 35 Cr Series B for alternative investment marketplace"
   },
@@ -2116,7 +2116,7 @@
       "investors": "led by Alteria Capital.",
       "announcement_date": "ive asset platform, announced on November 20, 2025 that it secured INR"
     },
-    "source_url": "https://inc42.com/buzz/grip-invest-secures-inr-15-cr-venture-debt",
+    "source_url": "https://inc42.com/?s=Grip+Invest",
     "source_name": "Inc42",
     "article_title": "Grip Invest secures INR 15 Cr Venture Debt to expand alternative assets"
   },
@@ -2152,7 +2152,7 @@
       "investors": "led by Elevation Capital with participation; with participation from Mayfield India and Kotak Investment Advisors.",
       "announcement_date": "nvestment platform, announced on April 5, 2025 that it raised INR"
     },
-    "source_url": "https://inc42.com/buzz/strata-secures-inr-45-cr-series-a-real-estate",
+    "source_url": "https://inc42.com/?s=Strata",
     "source_name": "Inc42",
     "article_title": "Strata secures INR 45 Cr Series A for fractional real estate investment"
   },
@@ -2187,7 +2187,7 @@
       "investors": "led by Left Lane Capital with participation; with participation from Galaxy Interactive.",
       "announcement_date": "ctibles investment, announced on February 28, 2025 that it closed a $1"
     },
-    "source_url": "https://prnewswire.com/news-releases/masterworks-closes-110m-series-a-art-investment",
+    "source_url": "https://www.prnewswire.com/search/news/?keyword=Masterworks",
     "source_name": "PR Newswire",
     "article_title": "Masterworks closes $110M Series A for fractional art investment platform"
   },
@@ -2222,7 +2222,7 @@
       "investors": "led by Accel with participation; with participation from Upfront Ventures.",
       "announcement_date": "s and collectibles, announced on July 11, 2025 that it raised $30"
     },
-    "source_url": "https://techcrunch.com/2025/07/11/rally-rd-secures-30m-series-b",
+    "source_url": "https://techcrunch.com/?s=Rally+Rd",
     "source_name": "TechCrunch",
     "article_title": "Rally Rd secures $30M Series B for fractional collectibles investment platform"
   },
@@ -2256,7 +2256,7 @@
       "investors": "led by Goldman Sachs.",
       "announcement_date": "ty and tech assets, announced on June 15, 2025 that it raised $300"
     },
-    "source_url": "https://businesswire.com/news/home/20250615/fundrise-closes-300m-growth-round",
+    "source_url": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm=Fundrise",
     "source_name": "Business Wire",
     "article_title": "Fundrise closes $300M Growth round for direct real estate investment platform"
   },
@@ -2290,7 +2290,7 @@
       "investors": "led by Andreessen Horowitz.",
       "announcement_date": "actional ownership, announced on August 4, 2025 that it raised $65"
     },
-    "source_url": "https://venturebeat.com/2025/08/04/cadre-secures-65m-series-c",
+    "source_url": "https://venturebeat.com/?s=Cadre",
     "source_name": "VentureBeat",
     "article_title": "Cadre secures $65M Series C for commercial real estate investment platform"
   },
@@ -2325,7 +2325,7 @@
       "investors": "led by AngelList Syndicate with participation; with participation from India Infoline.",
       "announcement_date": "commercial assets, announced on May 19, 2025 that it raised INR"
     },
-    "source_url": "https://inc42.com/buzz/hbits-bags-inr-25-cr-series-a",
+    "source_url": "https://inc42.com/?s=Hbits",
     "source_name": "Inc42",
     "article_title": "Hbits bags INR 25 Cr Series A for fractional commercial real estate platform"
   },
@@ -2360,7 +2360,7 @@
       "investors": "led by Eight Roads Ventures with participation; with participation from 3one4 Capital.",
       "announcement_date": "ds and debt assets, announced on September 8, 2025 that it secured INR"
     },
-    "source_url": "https://yourstory.com/2025/09/08/wint-wealth-secures-inr-50-cr-series-a",
+    "source_url": "https://yourstory.com/search?q=Wint+Wealth",
     "source_name": "YourStory",
     "article_title": "Wint Wealth secures INR 50 Cr Series A for alternative debt and retail bond platform"
   },
@@ -2395,7 +2395,7 @@
       "investors": "led by Drive Capital with participation; with participation from Jump Capital.",
       "announcement_date": "rmland investments, announced on March 14, 2025 that it closed a $6"
     },
-    "source_url": "https://techcrunch.com/2025/03/14/acretrader-secures-60m-series-b",
+    "source_url": "https://techcrunch.com/?s=AcreTrader",
     "source_name": "TechCrunch",
     "article_title": "AcreTrader secures $60M Series B for fractional farmland investment platform"
   },
@@ -2429,7 +2429,7 @@
       "investors": "led by Headline.",
       "announcement_date": "whiskey portfolios, announced on July 27, 2025 that it raised $10"
     },
-    "source_url": "https://businesswire.com/news/home/20250727/vinovest-raises-10m-series-a",
+    "source_url": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm=Vinovest",
     "source_name": "Business Wire",
     "article_title": "Vinovest raises $10M Series A for fine wine alternative asset management"
   },
@@ -2464,7 +2464,7 @@
       "investors": "led by WestBridge Capital with participation; with participation from Lightspeed India.",
       "announcement_date": "platforms in India, announced on August 17, 2025 that it secured INR"
     },
-    "source_url": "https://inc42.com/buzz/propshare-bags-inr-100-cr-growth-round",
+    "source_url": "https://inc42.com/?s=PropShare",
     "source_name": "Inc42",
     "article_title": "PropShare bags INR 100 Cr Growth round for fractional real estate investment"
   },
@@ -2499,7 +2499,7 @@
       "investors": "led by Accel with participation; with participation from Mankekar Family Office.",
       "announcement_date": "d real estate debt, announced on October 22, 2025 that it raised INR"
     },
-    "source_url": "https://yourstory.com/2025/10/22/jiraaf-secures-inr-70-cr-series-b",
+    "source_url": "https://yourstory.com/search?q=Jiraaf",
     "source_name": "YourStory",
     "article_title": "Jiraaf secures INR 70 Cr Series B for high-yield alternative investment marketplace"
   },
@@ -2533,7 +2533,7 @@
       "investors": "led by Syna Capital.",
       "announcement_date": "e asset portfolios, announced on April 28, 2025 that it raised INR"
     },
-    "source_url": "https://entrackr.com/2025/04/28/assetmonk-raises-inr-35-cr-series-a",
+    "source_url": "https://entrackr.com/?s=Assetmonk",
     "source_name": "Entrackr",
     "article_title": "Assetmonk raises INR 35 Cr Series A for commercial real estate alternative platform"
   },
@@ -2568,7 +2568,7 @@
       "investors": "led by Franklin Templeton with participation; with participation from Blue Seed Collective.",
       "announcement_date": "nal-grade farmland, announced on September 4, 2025 that it closed a $1"
     },
-    "source_url": "https://techcrunch.com/2025/09/04/farmtogether-lands-15m-series-a",
+    "source_url": "https://techcrunch.com/?s=FarmTogether",
     "source_name": "TechCrunch",
     "article_title": "FarmTogether lands $15M Series A for tech-enabled farmland investment platform"
   },
@@ -2602,7 +2602,7 @@
       "investors": "led by Tiger Global.",
       "announcement_date": "rtfolio management, announced on November 1, 2025 that it raised INR"
     },
-    "source_url": "https://inc42.com/buzz/kredx-secures-inr-150-cr-series-b",
+    "source_url": "https://inc42.com/?s=KredX",
     "source_name": "Inc42",
     "article_title": "KredX secures INR 150 Cr Series B for invoice discounting alternative debt platform"
   },
@@ -2637,7 +2637,7 @@
       "investors": "led by TIAA Ventures with participation; with participation from Wellington Management.",
       "announcement_date": "vestment platforms, announced on June 5, 2025 that it raised $43"
     },
-    "source_url": "https://venturebeat.com/2025/06/05/crowdstreet-raises-43m-series-c",
+    "source_url": "https://venturebeat.com/?s=CrowdStreet",
     "source_name": "VentureBeat",
     "article_title": "CrowdStreet raises $43M Series C for commercial real estate investment marketplace"
   },
@@ -2671,7 +2671,7 @@
       "investors": "led by AngelList India.",
       "announcement_date": "te debt securities, announced on May 16, 2025 that it secured INR"
     },
-    "source_url": "https://yourstory.com/2025/05/16/altgraaf-bags-inr-18-cr-seed",
+    "source_url": "https://yourstory.com/search?q=Altgraaf",
     "source_name": "YourStory",
     "article_title": "Altgraaf bags INR 18 Cr Seed round for fixed income alternative investments"
   },
@@ -2706,7 +2706,7 @@
       "investors": "led by SoftBank Vision Fund 2 with participation; with participation from Khosla Ventures.",
       "announcement_date": "property ownership, announced on November 9, 2025 that it raised $240"
     },
-    "source_url": "https://businesswire.com/news/home/20251109/roofstock-secures-240m-series-e",
+    "source_url": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm=Roofstock",
     "source_name": "Business Wire",
     "article_title": "Roofstock secures $240M Series E for real estate investment platform"
   },
@@ -2742,7 +2742,7 @@
       "investors": "led by Viewpoint Ventures with participation; with participation from Bessemer Venture Partners and Khosla Ventures.",
       "announcement_date": "-net-worth clients, announced on March 22, 2025 that it has raised"
     },
-    "source_url": "https://techcrunch.com/2025/03/22/farther-raises-72m-series-c-wealthtech",
+    "source_url": "https://techcrunch.com/?s=Farther",
     "source_name": "TechCrunch",
     "article_title": "Farther raises $72M Series C for wealthtech advisory platform"
   },
@@ -2778,7 +2778,7 @@
       "investors": "led by Premji Invest with participation; with participation from Elevation Capital and Matrix Partners India.",
       "announcement_date": "king professionals, announced on July 8, 2025 that it secured INR"
     },
-    "source_url": "https://inc42.com/buzz/dezerv-bags-inr-250-cr-series-b-wealth-management",
+    "source_url": "https://inc42.com/?s=Dezerv",
     "source_name": "Inc42",
     "article_title": "Dezerv bags INR 250 Cr Series B to expand digital wealth management platform"
   },
@@ -2813,7 +2813,7 @@
       "investors": "led by Dragoneer Investment Group with participation; with participation from Greylock Partners.",
       "announcement_date": "planning platforms, announced on August 14, 2025 that it secured a $"
     },
-    "source_url": "https://venturebeat.com/2025/08/14/wealthfront-secures-100m-growth-round",
+    "source_url": "https://venturebeat.com/?s=Wealthfront",
     "source_name": "VentureBeat",
     "article_title": "Wealthfront secures $100M Growth round for automated portfolio management"
   },
@@ -2847,7 +2847,7 @@
       "funding_stage": "Series B",
       "investors": "led by Tiger Global with participation; with participation from Rocketship."
     },
-    "source_url": "https://yourstory.com/2025/05/11/jar-secures-22m-series-b-micro-investing",
+    "source_url": "https://yourstory.com/search?q=Jar",
     "source_name": "YourStory",
     "article_title": "Jar secures $22M Series B for automated savings and micro-investment platform"
   },
@@ -2881,7 +2881,7 @@
       "investors": "led by Andreessen Horowitz.",
       "announcement_date": "everyday investors, announced on June 28, 2025 that it raised $58"
     },
-    "source_url": "https://techcrunch.com/2025/06/28/titan-invest-raises-58m-series-b",
+    "source_url": "https://techcrunch.com/?s=Titan",
     "source_name": "TechCrunch",
     "article_title": "Titan secures $58M Series B for active wealth management and portfolio advisory"
   },
@@ -2916,7 +2916,7 @@
       "investors": "led by Iconiq Growth with participation; with participation from Alkeon Capital.",
       "announcement_date": "l wealth solutions, announced on April 18, 2025 that it closed a $2"
     },
-    "source_url": "https://inc42.com/buzz/groww-closes-251m-series-e-wealth-management",
+    "source_url": "https://inc42.com/?s=Groww",
     "source_name": "Inc42",
     "article_title": "Groww closes $251M Series E to expand digital wealth management and brokerage"
   },
@@ -2951,7 +2951,7 @@
       "investors": "led by Steadview Capital with participation; with participation from Tiger Global.",
       "announcement_date": "financial planning, announced on May 22, 2025 that it raised $86"
     },
-    "source_url": "https://entrackr.com/2025/05/22/indmoney-secures-86m-series-d",
+    "source_url": "https://entrackr.com/?s=INDmoney",
     "source_name": "Entrackr",
     "article_title": "INDmoney secures $86M Series D for family office and wealthtech platform"
   },
@@ -2985,7 +2985,7 @@
       "investors": "led by SoftBank Vision Fund 2.",
       "announcement_date": "anagement platform, announced on July 15, 2025 that it secured $15"
     },
-    "source_url": "https://businesswire.com/news/home/20250715/m1-finance-raises-150m-series-e",
+    "source_url": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm=M1+Finance",
     "source_name": "Business Wire",
     "article_title": "M1 Finance raises $150M Series E for automated investing and digital brokerage"
   },
@@ -3020,7 +3020,7 @@
       "investors": "led by Accel Partners with participation; with participation from Omidyar Network.",
       "announcement_date": "planning platform, announced on August 19, 2025 that it raised INR"
     },
-    "source_url": "https://yourstory.com/2025/08/19/scripbox-secures-inr-160-cr-series-d",
+    "source_url": "https://yourstory.com/search?q=Scripbox",
     "source_name": "YourStory",
     "article_title": "Scripbox secures INR 160 Cr Series D for automated wealth management"
   },
@@ -3055,7 +3055,7 @@
       "investors": "led by Accel with participation; with participation from Tiger Global.",
       "announcement_date": "nagement solutions, announced on September 16, 2025 that it raised $220"
     },
-    "source_url": "https://techcrunch.com/2025/09/16/public-com-raises-220m-series-d",
+    "source_url": "https://techcrunch.com/?s=Public.com",
     "source_name": "TechCrunch",
     "article_title": "Public.com raises $220M Series D for multi-asset wealth management platform"
   },
@@ -3089,7 +3089,7 @@
       "investors": "led by Alpha Wave Incubation.",
       "announcement_date": "anagement software, announced on June 12, 2025 that it raised INR"
     },
-    "source_url": "https://inc42.com/buzz/wealthy-secures-inr-55-cr-series-a",
+    "source_url": "https://inc42.com/?s=Wealthy",
     "source_name": "Inc42",
     "article_title": "Wealthy secures INR 55 Cr Series A for digital wealthtech advisor platform"
   },
@@ -3124,7 +3124,7 @@
       "investors": "led by Durable Capital Partners with participation; with participation from Warburg Pincus.",
       "announcement_date": "orm for households, announced on October 29, 2025 that it closed a $1"
     },
-    "source_url": "https://venturebeat.com/2025/10/29/facet-wealth-secures-100m-series-c",
+    "source_url": "https://venturebeat.com/?s=Facet+Wealth",
     "source_name": "VentureBeat",
     "article_title": "Facet Wealth secures $100M Series C for personalized financial planning platform"
   },
@@ -3159,7 +3159,7 @@
       "investors": "led by BMO Capital with participation; with participation from Melinda French Gates.",
       "announcement_date": "or women investors, announced on April 12, 2025 that it secured $53"
     },
-    "source_url": "https://businesswire.com/news/home/20250412/ellevest-raises-53m-series-b",
+    "source_url": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm=Ellevest",
     "source_name": "Business Wire",
     "article_title": "Ellevest raises $53M Series B for algorithm-driven wealth management"
   },
@@ -3193,7 +3193,7 @@
       "investors": "led by angel syndicates.",
       "announcement_date": "il wealth advisors, announced on July 3, 2025 that it raised INR"
     },
-    "source_url": "https://yourstory.com/2025/07/03/fintso-raises-inr-25-cr-series-a",
+    "source_url": "https://yourstory.com/search?q=Fintso",
     "source_name": "YourStory",
     "article_title": "Fintso raises INR 25 Cr Series A for wealthtech advisory infrastructure"
   },
@@ -3228,7 +3228,7 @@
       "investors": "led by PayU with participation; with participation from Quona Capital.",
       "announcement_date": "ith regional banks, announced on August 25, 2025 that it raised INR"
     },
-    "source_url": "https://entrackr.com/2025/08/25/fisdom-secures-inr-110-cr-series-c",
+    "source_url": "https://entrackr.com/?s=Fisdom",
     "source_name": "Entrackr",
     "article_title": "Fisdom secures INR 110 Cr Series C for digital wealth management solutions"
   },
@@ -3262,7 +3262,7 @@
       "investors": "led by Gradient Ventures.",
       "announcement_date": "s for high-earners, announced on May 2, 2025 that it raised $12"
     },
-    "source_url": "https://techcrunch.com/2025/05/02/range-raises-12m-series-a",
+    "source_url": "https://techcrunch.com/?s=Range",
     "source_name": "TechCrunch",
     "article_title": "Range raises $12M Series A for AI-powered wealth management platform"
   },
@@ -3296,7 +3296,7 @@
       "investors": "led by Rainmatter Capital by Zerodha.",
       "announcement_date": "rtfolio management, announced on September 11, 2025 that it raised INR"
     },
-    "source_url": "https://inc42.com/buzz/assetplus-secures-inr-30-cr-series-a",
+    "source_url": "https://inc42.com/?s=AssetPlus",
     "source_name": "Inc42",
     "article_title": "AssetPlus secures INR 30 Cr Series A for digital wealth advisory platform"
   },
@@ -3330,7 +3330,7 @@
       "investors": "led by Felicis Ventures.",
       "announcement_date": "nagement platforms, announced on October 10, 2025 that it raised $56"
     },
-    "source_url": "https://businesswire.com/news/home/20251010/origin-secures-56m-series-b",
+    "source_url": "https://www.businesswire.com/portal/site/home/search/?searchType=all&searchTerm=Origin",
     "source_name": "Business Wire",
     "article_title": "Origin secures $56M Series B for comprehensive financial planning platform"
   },
@@ -3364,7 +3364,7 @@
       "investors": "led by Greenoaks Capital.",
       "announcement_date": "ers and executives, announced on November 12, 2025 that it raised $25"
     },
-    "source_url": "https://venturebeat.com/2025/11/12/compound-raises-25m-series-b",
+    "source_url": "https://venturebeat.com/?s=Compound",
     "source_name": "VentureBeat",
     "article_title": "Compound raises $25M Series B for tech executive wealth management"
   }

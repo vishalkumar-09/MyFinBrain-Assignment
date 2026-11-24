@@ -140,6 +140,10 @@ class DataExporter:
                                 pub_date = str(ev.article.published_at.date())
                             break
 
+                if not source_url and comp.website:
+                    source_url = comp.website
+                    source_name = "Company Website"
+
                 main_dict = {
                     "Company Name": comp.canonical_name,
                     "Country": comp.headquarters_country or "",

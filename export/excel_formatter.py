@@ -38,10 +38,11 @@ _THIN_BORDER = Border(
     bottom=Side(style="thin", color="D9D9D9"),
 )
 _ZEBRA_FILL = PatternFill(start_color="F9FAFB", end_color="F9FAFB", fill_type="solid")
+_LINK_FONT = Font(name="Calibri", size=11, color="0563C1", underline="single")
 
 
 def apply_table_formatting(ws: openpyxl.worksheet.worksheet.Worksheet) -> None:
-    """Format headers, borders, zebra striping, and column widths."""
+    """Format headers, borders, zebra striping, clickable hyperlinks, and column widths."""
     # Format header row
     for col_idx in range(1, ws.max_column + 1):
         cell = ws.cell(row=1, column=col_idx)
@@ -57,6 +58,13 @@ def apply_table_formatting(ws: openpyxl.worksheet.worksheet.Worksheet) -> None:
             cell.border = _THIN_BORDER
             if is_even:
                 cell.fill = _ZEBRA_FILL
+
+            # Format URLs as live clickable hyperlinks
+            val_str = str(cell.value or "").strip()
+            if val_str.startswith(("http://", "https://")):
+                cell.hyperlink = val_str
+                cell.font = _LINK_FONT
+                cell.alignment = Alignment(horizontal="left", vertical="center")
 
     # Auto-adjust column widths (bounded between 12 and 55 characters)
     for col in ws.columns:

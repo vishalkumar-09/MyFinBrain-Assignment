@@ -1,10 +1,10 @@
 {
   "start_date": "2024-11-23",
   "end_date": "2026-11-23",
-  "started_at": "2026-11-24T05:23:06.953348+00:00",
-  "finished_at": "2026-11-24T05:23:19.821497+00:00",
-  "total_discovered": 182,
-  "total_unique": 181,
+  "started_at": "2026-11-24T06:26:07.250650+00:00",
+  "finished_at": "2026-11-24T06:26:29.547568+00:00",
+  "total_discovered": 175,
+  "total_unique": 174,
   "total_duplicate": 1,
   "total_errors": 0,
   "sources": [
@@ -30,23 +30,23 @@
       "success": true
     },
     {
-      "source_id": "businesswire",
+      "source_id": "inc42",
+      "articles_found": 20,
+      "unique_articles": 20,
+      "errors": [],
+      "success": true
+    },
+    {
+      "source_id": "prnewswire",
       "articles_found": 0,
       "unique_articles": 0,
       "errors": [],
       "success": true
     },
     {
-      "source_id": "prnewswire",
-      "articles_found": 4,
-      "unique_articles": 4,
-      "errors": [],
-      "success": true
-    },
-    {
-      "source_id": "inc42",
-      "articles_found": 23,
-      "unique_articles": 23,
+      "source_id": "businesswire",
+      "articles_found": 0,
+      "unique_articles": 0,
       "errors": [],
       "success": true
     }

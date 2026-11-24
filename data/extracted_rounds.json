@@ -1,29 +1,5 @@
 [
   {
-    "company_name": "VC funding rebounds as startups",
-    "company_website": null,
-    "company_description": null,
-    "headquarters_country": "India",
-    "headquarters_city": null,
-    "funding_stage": "Other",
-    "funding_amount": 255000000.0,
-    "currency": "USD",
-    "original_amount_text": "$255M",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-11-23",
-    "lead_investor": null,
-    "investors": [],
-    "source_url": "https://yourstory.com/2026/11/vc-funding-rebounds-women-founders-social-change",
-    "source_name": "YourStory",
-    "article_title": "VC funding rebounds as startups raise $255M; Women founders driving social change",
-    "supporting_evidence": {
-      "company_name": "VC funding rebounds as startups raise $255",
-      "funding_amount": "VC funding rebounds as startups raise $255M; Women founders driving social change"
-    },
-    "is_vc_fund_raise": false
-  },
-  {
     "company_name": "Ionic Wealth",
     "company_website": null,
     "company_description": "wealthtech platform and a subsidiary of Angel One",
@@ -53,30 +29,50 @@
     "is_vc_fund_raise": false
   },
   {
-    "company_name": "IIFL Finance to",
+    "company_name": "VC funding rebounds as startups",
     "company_website": null,
     "company_description": null,
-    "headquarters_country": null,
+    "headquarters_country": "India",
     "headquarters_city": null,
-    "funding_stage": "Growth",
-    "funding_amount": 64140000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 6,414 Cr",
+    "funding_stage": "Other",
+    "funding_amount": 255000000.0,
+    "currency": "USD",
+    "original_amount_text": "$255M",
     "is_undisclosed": false,
     "announcement_date": null,
-    "article_publication_date": "2026-11-10",
-    "lead_investor": "Blackstone\n\nIIFL Finance to raise Rs 6",
-    "investors": [
-      "Blackstone\n\nIIFL Finance to raise Rs 6"
-    ],
-    "source_url": "https://yourstory.com/2026/11/iifl-finance-to-raise-rs-6414-crore-with-blackstone-leading-rs-5000-crore-primary-infusion",
+    "article_publication_date": "2026-11-23",
+    "lead_investor": null,
+    "investors": [],
+    "source_url": "https://yourstory.com/2026/11/vc-funding-rebounds-women-founders-social-change",
     "source_name": "YourStory",
-    "article_title": "IIFL Finance to raise Rs 6,414 Cr led by Blackstone",
+    "article_title": "VC funding rebounds as startups raise $255M; Women founders driving social change",
     "supporting_evidence": {
-      "company_name": "IIFL Finance to raise Rs",
-      "funding_amount": "IIFL Finance to raise Rs 6,414 Cr led by Blackstone\n\nIIFL Finance to rais",
-      "funding_stage": "growth",
-      "investors": "led by Blackstone\n\nIIFL Finance to raise Rs 6,"
+      "company_name": "VC funding rebounds as startups raise $255",
+      "funding_amount": "VC funding rebounds as startups raise $255M; Women founders driving social change"
+    },
+    "is_vc_fund_raise": false
+  },
+  {
+    "company_name": "eri Credits and Capital Limited",
+    "company_website": null,
+    "company_description": "listed Indian company with interests including securities and investments",
+    "headquarters_country": "India",
+    "headquarters_city": null,
+    "funding_stage": "Other",
+    "funding_amount": 176010000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 17,601 crore",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-09-29",
+    "lead_investor": null,
+    "investors": [],
+    "source_url": "https://yourstory.com/2026/09/adani-family-office-backs-nudge-as-startup-pivots-to-rewards-led-commerce",
+    "source_name": "YourStory",
+    "article_title": "Adani Family Office backs Nudge as startup pivots to rewards-led commerce",
+    "supporting_evidence": {
+      "company_name": "eri Credits and Capital Limited, a listed Indian company with interests including securities and investments, has ",
+      "funding_amount": "vertising on e-retail platforms reached Rs 17,601 crore in 2025, up 55.9% year on year, accordi"
     },
     "is_vc_fund_raise": false
   },
@@ -138,6 +134,31 @@
     "is_vc_fund_raise": false
   },
   {
+    "company_name": "Rotoris",
+    "company_website": null,
+    "company_description": null,
+    "headquarters_country": "India",
+    "headquarters_city": "Gurugram",
+    "funding_stage": "Series A",
+    "funding_amount": 700000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 70 Cr",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-10-27",
+    "lead_investor": null,
+    "investors": [],
+    "source_url": "https://yourstory.com/2026/10/rotoris-bags-rs-70-cr-to-expand-its-luxury-watch-business",
+    "source_name": "YourStory",
+    "article_title": "Rotoris bags Rs 70 Cr to expand its luxury watch business",
+    "supporting_evidence": {
+      "company_name": "Rotoris bags Rs",
+      "funding_amount": "Rotoris bags Rs 70 Cr to expand its luxury watch business\n\nRo",
+      "funding_stage": "Series A"
+    },
+    "is_vc_fund_raise": false
+  },
+  {
     "company_name": "Cyient Semiconductors",
     "company_website": null,
     "company_description": null,
@@ -162,34 +183,6 @@
       "funding_amount": "Cyient Semiconductors bags $10M from GlobalFoundries\n\nCyient Semiconduc",
       "funding_stage": "growth",
       "investors": "led by Edelweiss,"
-    },
-    "is_vc_fund_raise": false
-  },
-  {
-    "company_name": "Live2.ai",
-    "company_website": "https://live2.ai",
-    "company_description": "uses artificial intelligence (AI) to connect social-media intelligence with marketing and commerce",
-    "headquarters_country": "India",
-    "headquarters_city": "Bengaluru",
-    "funding_stage": "Series B",
-    "funding_amount": 1300000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 130 Cr",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-10-27",
-    "lead_investor": "VC firm IvyCap Ventures",
-    "investors": [
-      "VC firm IvyCap Ventures"
-    ],
-    "source_url": "https://yourstory.com/2026/10/live2ai-raises-rs-130-cr-to-expand-its-ai-led-social-commerce-platform",
-    "source_name": "YourStory",
-    "article_title": "Live2.ai raises Rs 130 Cr to expand its AI-led social commerce platform",
-    "supporting_evidence": {
-      "company_name": "Live2.ai raises Rs",
-      "funding_amount": "Live2.ai raises Rs 130 Cr to expand its AI-led social commerce pl",
-      "funding_stage": "Series B",
-      "investors": "led by VC firm IvyCap Ventures,"
     },
     "is_vc_fund_raise": false
   },
@@ -222,163 +215,6 @@
     "is_vc_fund_raise": false
   },
   {
-    "company_name": "PowerUp Money",
-    "company_website": null,
-    "company_description": "wealthtech platform offering mutual fund advice and digital wealth management services",
-    "headquarters_country": "India",
-    "headquarters_city": "Bengaluru",
-    "funding_stage": "Other",
-    "funding_amount": 10000000.0,
-    "currency": "USD",
-    "original_amount_text": "$10M",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-11-03",
-    "lead_investor": "Flourish Ventures",
-    "investors": [
-      "Flourish Ventures"
-    ],
-    "source_url": "https://yourstory.com/2026/11/powerup-money-raises-10m-expand-ai-led-wealth-management-india",
-    "source_name": "YourStory",
-    "article_title": "PowerUp Money raises $10M to expand AI-led wealth management",
-    "supporting_evidence": {
-      "company_name": "PowerUp Money raises $10",
-      "funding_amount": "PowerUp Money raises $10M to expand AI-led wealth management\n\nPow",
-      "investors": "led by Flourish Ventures,"
-    },
-    "is_vc_fund_raise": false
-  },
-  {
-    "company_name": "eri Credits and Capital Limited",
-    "company_website": null,
-    "company_description": "listed Indian company with interests including securities and investments",
-    "headquarters_country": "India",
-    "headquarters_city": null,
-    "funding_stage": "Other",
-    "funding_amount": 176010000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 17,601 crore",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-09-29",
-    "lead_investor": null,
-    "investors": [],
-    "source_url": "https://yourstory.com/2026/09/adani-family-office-backs-nudge-as-startup-pivots-to-rewards-led-commerce",
-    "source_name": "YourStory",
-    "article_title": "Adani Family Office backs Nudge as startup pivots to rewards-led commerce",
-    "supporting_evidence": {
-      "company_name": "eri Credits and Capital Limited, a listed Indian company with interests including securities and investments, has ",
-      "funding_amount": "vertising on e-retail platforms reached Rs 17,601 crore in 2025, up 55.9% year on year, accordi"
-    },
-    "is_vc_fund_raise": false
-  },
-  {
-    "company_name": "Bharat Semi",
-    "company_website": null,
-    "company_description": null,
-    "headquarters_country": "United States",
-    "headquarters_city": "New York",
-    "funding_stage": "Seed",
-    "funding_amount": 24000000.0,
-    "currency": "USD",
-    "original_amount_text": "$24M",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-11-16",
-    "lead_investor": "Info Edge",
-    "investors": [
-      "Info Edge"
-    ],
-    "source_url": "https://yourstory.com/2026/11/bharat-semi-raises-24m-to-develop-ai-enabled-sensors",
-    "source_name": "YourStory",
-    "article_title": "Bharat Semi raises $24M to develop AI-enabled sensors",
-    "supporting_evidence": {
-      "company_name": "Bharat Semi raises $24",
-      "funding_amount": "Bharat Semi raises $24M to develop AI-enabled sensors\n\nBharat S",
-      "funding_stage": "seed funding",
-      "investors": "led by Info Edge,"
-    },
-    "is_vc_fund_raise": false
-  },
-  {
-    "company_name": "NABARD-backed NABVENTURES",
-    "company_website": null,
-    "company_description": "venture capital arm of the National Bank for Agriculture and Rural Development (NABARD)",
-    "headquarters_country": "India",
-    "headquarters_city": null,
-    "funding_stage": "Growth",
-    "funding_amount": 4500000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 450 Cr",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-10-09",
-    "lead_investor": "NABVENTURES",
-    "investors": [
-      "NABVENTURES",
-      "KisaanSay"
-    ],
-    "source_url": "https://yourstory.com/2026/10/nabventures-hits-rs-450-crore-first-close-for-second-fund",
-    "source_name": "YourStory",
-    "article_title": "NABARD-backed NABVENTURES raises Rs 450 Cr for second fund",
-    "supporting_evidence": {
-      "company_name": "NABARD-backed NABVENTURES raises Rs",
-      "funding_amount": "NABARD-backed NABVENTURES raises Rs 450 Cr for second fund\n\nNABARD-backed NABVENTU",
-      "funding_stage": "growth",
-      "investors": "led by NABVENTURES and KisaanSay,"
-    },
-    "is_vc_fund_raise": false
-  },
-  {
-    "company_name": "Rotoris",
-    "company_website": null,
-    "company_description": null,
-    "headquarters_country": "India",
-    "headquarters_city": "Gurugram",
-    "funding_stage": "Series A",
-    "funding_amount": 700000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 70 Cr",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-10-27",
-    "lead_investor": null,
-    "investors": [],
-    "source_url": "https://yourstory.com/2026/10/rotoris-bags-rs-70-cr-to-expand-its-luxury-watch-business",
-    "source_name": "YourStory",
-    "article_title": "Rotoris bags Rs 70 Cr to expand its luxury watch business",
-    "supporting_evidence": {
-      "company_name": "Rotoris bags Rs",
-      "funding_amount": "Rotoris bags Rs 70 Cr to expand its luxury watch business\n\nRo",
-      "funding_stage": "Series A"
-    },
-    "is_vc_fund_raise": false
-  },
-  {
-    "company_name": "ValueQuest Investment Advisors",
-    "company_website": null,
-    "company_description": "Mumbai-based investment manager",
-    "headquarters_country": "India",
-    "headquarters_city": "Mumbai",
-    "funding_stage": "Other",
-    "funding_amount": 7750000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 775 Cr",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-11-12",
-    "lead_investor": null,
-    "investors": [],
-    "source_url": "https://yourstory.com/2026/11/valuequest-commits-rs-775-cr-to-advance-indias-defence-manufacturing-push",
-    "source_name": "YourStory",
-    "article_title": "ValueQuest commits Rs 775 Cr to advance India\u2019s defence, manufacturing push",
-    "supporting_evidence": {
-      "company_name": "ValueQuest Investment Advisors, a Mumbai-based investment manager, has ",
-      "funding_amount": "ValueQuest commits Rs 775 Cr to advance India\u2019s defence, manufacturi"
-    },
-    "is_vc_fund_raise": false
-  },
-  {
     "company_name": "Style Union",
     "company_website": null,
     "company_description": "parent company of value-fashion retailer Style Union",
@@ -403,34 +239,6 @@
       "funding_amount": "Style Union raises Rs 485 Cr to expand beyond southern India\n\nStyle",
       "funding_stage": "Series E",
       "investors": "led by Venturi Partners,"
-    },
-    "is_vc_fund_raise": false
-  },
-  {
-    "company_name": "Seeds Fincap Pvt Ltd",
-    "company_website": null,
-    "company_description": "non-baking financial company (NBFC) supporting small Indian businesses",
-    "headquarters_country": null,
-    "headquarters_city": null,
-    "funding_stage": "Series B",
-    "funding_amount": 1000000000.0,
-    "currency": "INR",
-    "original_amount_text": "Rs 100 Cr",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-10-01",
-    "lead_investor": "the Michael & Susan Dell Foundation",
-    "investors": [
-      "the Michael & Susan Dell Foundation"
-    ],
-    "source_url": "https://yourstory.com/2026/10/seeds-fincap-rs-100-cr-series-b-round-michael-susan-dell-foundation",
-    "source_name": "YourStory",
-    "article_title": "Seeds Fincap secures over Rs 100 Cr in Series B led by Michael & Susan Dell Foundation",
-    "supporting_evidence": {
-      "company_name": "Seeds Fincap Pvt Ltd, a non-baking financial company (NBFC) supporting small Indian businesses, has ",
-      "funding_amount": "Seeds Fincap secures over Rs 100 Cr in Series B led by Michael & Susan Dell",
-      "funding_stage": "Series B",
-      "investors": "led by the Michael & Susan Dell Foundation."
     },
     "is_vc_fund_raise": false
   },
@@ -463,6 +271,113 @@
     "is_vc_fund_raise": false
   },
   {
+    "company_name": "IIFL Finance to",
+    "company_website": null,
+    "company_description": null,
+    "headquarters_country": null,
+    "headquarters_city": null,
+    "funding_stage": "Growth",
+    "funding_amount": 64140000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 6,414 Cr",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-11-10",
+    "lead_investor": "Blackstone\n\nIIFL Finance to raise Rs 6",
+    "investors": [
+      "Blackstone\n\nIIFL Finance to raise Rs 6"
+    ],
+    "source_url": "https://yourstory.com/2026/11/iifl-finance-to-raise-rs-6414-crore-with-blackstone-leading-rs-5000-crore-primary-infusion",
+    "source_name": "YourStory",
+    "article_title": "IIFL Finance to raise Rs 6,414 Cr led by Blackstone",
+    "supporting_evidence": {
+      "company_name": "IIFL Finance to raise Rs",
+      "funding_amount": "IIFL Finance to raise Rs 6,414 Cr led by Blackstone\n\nIIFL Finance to rais",
+      "funding_stage": "growth",
+      "investors": "led by Blackstone\n\nIIFL Finance to raise Rs 6,"
+    },
+    "is_vc_fund_raise": false
+  },
+  {
+    "company_name": "ValueQuest Investment Advisors",
+    "company_website": null,
+    "company_description": "Mumbai-based investment manager",
+    "headquarters_country": "India",
+    "headquarters_city": "Mumbai",
+    "funding_stage": "Other",
+    "funding_amount": 7750000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 775 Cr",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-11-12",
+    "lead_investor": null,
+    "investors": [],
+    "source_url": "https://yourstory.com/2026/11/valuequest-commits-rs-775-cr-to-advance-indias-defence-manufacturing-push",
+    "source_name": "YourStory",
+    "article_title": "ValueQuest commits Rs 775 Cr to advance India\u2019s defence, manufacturing push",
+    "supporting_evidence": {
+      "company_name": "ValueQuest Investment Advisors, a Mumbai-based investment manager, has ",
+      "funding_amount": "ValueQuest commits Rs 775 Cr to advance India\u2019s defence, manufacturi"
+    },
+    "is_vc_fund_raise": false
+  },
+  {
+    "company_name": "Bharat Semi",
+    "company_website": null,
+    "company_description": null,
+    "headquarters_country": "United States",
+    "headquarters_city": "New York",
+    "funding_stage": "Seed",
+    "funding_amount": 24000000.0,
+    "currency": "USD",
+    "original_amount_text": "$24M",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-11-16",
+    "lead_investor": "Info Edge",
+    "investors": [
+      "Info Edge"
+    ],
+    "source_url": "https://yourstory.com/2026/11/bharat-semi-raises-24m-to-develop-ai-enabled-sensors",
+    "source_name": "YourStory",
+    "article_title": "Bharat Semi raises $24M to develop AI-enabled sensors",
+    "supporting_evidence": {
+      "company_name": "Bharat Semi raises $24",
+      "funding_amount": "Bharat Semi raises $24M to develop AI-enabled sensors\n\nBharat S",
+      "funding_stage": "seed funding",
+      "investors": "led by Info Edge,"
+    },
+    "is_vc_fund_raise": false
+  },
+  {
+    "company_name": "PowerUp Money",
+    "company_website": null,
+    "company_description": "wealthtech platform offering mutual fund advice and digital wealth management services",
+    "headquarters_country": "India",
+    "headquarters_city": "Bengaluru",
+    "funding_stage": "Other",
+    "funding_amount": 10000000.0,
+    "currency": "USD",
+    "original_amount_text": "$10M",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-11-03",
+    "lead_investor": "Flourish Ventures",
+    "investors": [
+      "Flourish Ventures"
+    ],
+    "source_url": "https://yourstory.com/2026/11/powerup-money-raises-10m-expand-ai-led-wealth-management-india",
+    "source_name": "YourStory",
+    "article_title": "PowerUp Money raises $10M to expand AI-led wealth management",
+    "supporting_evidence": {
+      "company_name": "PowerUp Money raises $10",
+      "funding_amount": "PowerUp Money raises $10M to expand AI-led wealth management\n\nPow",
+      "investors": "led by Flourish Ventures,"
+    },
+    "is_vc_fund_raise": false
+  },
+  {
     "company_name": "Metasports Interactive",
     "company_website": null,
     "company_description": "Hyderabad-based maker of cricket strategy game Hitwicket",
@@ -487,6 +402,91 @@
       "funding_amount": ".\nThis development is separate from the $20 million in user-acquisition funding it secured",
       "funding_stage": "strategic",
       "investors": "led by Elevation Capital,"
+    },
+    "is_vc_fund_raise": false
+  },
+  {
+    "company_name": "Live2.ai",
+    "company_website": "https://live2.ai",
+    "company_description": "uses artificial intelligence (AI) to connect social-media intelligence with marketing and commerce",
+    "headquarters_country": "India",
+    "headquarters_city": "Bengaluru",
+    "funding_stage": "Series B",
+    "funding_amount": 1300000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 130 Cr",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-10-27",
+    "lead_investor": "VC firm IvyCap Ventures",
+    "investors": [
+      "VC firm IvyCap Ventures"
+    ],
+    "source_url": "https://yourstory.com/2026/10/live2ai-raises-rs-130-cr-to-expand-its-ai-led-social-commerce-platform",
+    "source_name": "YourStory",
+    "article_title": "Live2.ai raises Rs 130 Cr to expand its AI-led social commerce platform",
+    "supporting_evidence": {
+      "company_name": "Live2.ai raises Rs",
+      "funding_amount": "Live2.ai raises Rs 130 Cr to expand its AI-led social commerce pl",
+      "funding_stage": "Series B",
+      "investors": "led by VC firm IvyCap Ventures,"
+    },
+    "is_vc_fund_raise": false
+  },
+  {
+    "company_name": "Seeds Fincap Pvt Ltd",
+    "company_website": null,
+    "company_description": "non-baking financial company (NBFC) supporting small Indian businesses",
+    "headquarters_country": null,
+    "headquarters_city": null,
+    "funding_stage": "Series B",
+    "funding_amount": 1000000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 100 Cr",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-10-01",
+    "lead_investor": "the Michael & Susan Dell Foundation",
+    "investors": [
+      "the Michael & Susan Dell Foundation"
+    ],
+    "source_url": "https://yourstory.com/2026/10/seeds-fincap-rs-100-cr-series-b-round-michael-susan-dell-foundation",
+    "source_name": "YourStory",
+    "article_title": "Seeds Fincap secures over Rs 100 Cr in Series B led by Michael & Susan Dell Foundation",
+    "supporting_evidence": {
+      "company_name": "Seeds Fincap Pvt Ltd, a non-baking financial company (NBFC) supporting small Indian businesses, has ",
+      "funding_amount": "Seeds Fincap secures over Rs 100 Cr in Series B led by Michael & Susan Dell",
+      "funding_stage": "Series B",
+      "investors": "led by the Michael & Susan Dell Foundation."
+    },
+    "is_vc_fund_raise": false
+  },
+  {
+    "company_name": "NABARD-backed NABVENTURES",
+    "company_website": null,
+    "company_description": "venture capital arm of the National Bank for Agriculture and Rural Development (NABARD)",
+    "headquarters_country": "India",
+    "headquarters_city": null,
+    "funding_stage": "Growth",
+    "funding_amount": 4500000000.0,
+    "currency": "INR",
+    "original_amount_text": "Rs 450 Cr",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-10-09",
+    "lead_investor": "NABVENTURES",
+    "investors": [
+      "NABVENTURES",
+      "KisaanSay"
+    ],
+    "source_url": "https://yourstory.com/2026/10/nabventures-hits-rs-450-crore-first-close-for-second-fund",
+    "source_name": "YourStory",
+    "article_title": "NABARD-backed NABVENTURES raises Rs 450 Cr for second fund",
+    "supporting_evidence": {
+      "company_name": "NABARD-backed NABVENTURES raises Rs",
+      "funding_amount": "NABARD-backed NABVENTURES raises Rs 450 Cr for second fund\n\nNABARD-backed NABVENTU",
+      "funding_stage": "growth",
+      "investors": "led by NABVENTURES and KisaanSay,"
     },
     "is_vc_fund_raise": false
   },
@@ -540,29 +540,6 @@
     "is_vc_fund_raise": false
   },
   {
-    "company_name": "On Monday",
-    "company_website": null,
-    "company_description": "newly public AI company",
-    "headquarters_country": null,
-    "headquarters_city": null,
-    "funding_stage": "Other",
-    "funding_amount": null,
-    "currency": null,
-    "original_amount_text": null,
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-11-23",
-    "lead_investor": null,
-    "investors": [],
-    "source_url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
-    "source_name": "TechCrunch",
-    "article_title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
-    "supporting_evidence": {
-      "company_name": "On Monday, the newly public AI company announced"
-    },
-    "is_vc_fund_raise": false
-  },
-  {
     "company_name": "Last week",
     "company_website": null,
     "company_description": "Commerce Department also",
@@ -582,6 +559,29 @@
     "article_title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
     "supporting_evidence": {
       "company_name": "Last week, the Commerce Department also announced"
+    },
+    "is_vc_fund_raise": false
+  },
+  {
+    "company_name": "On Monday",
+    "company_website": null,
+    "company_description": "newly public AI company",
+    "headquarters_country": null,
+    "headquarters_city": null,
+    "funding_stage": "Other",
+    "funding_amount": null,
+    "currency": null,
+    "original_amount_text": null,
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-11-23",
+    "lead_investor": null,
+    "investors": [],
+    "source_url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
+    "source_name": "TechCrunch",
+    "article_title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+    "supporting_evidence": {
+      "company_name": "On Monday, the newly public AI company announced"
     },
     "is_vc_fund_raise": false
   },
@@ -634,34 +634,6 @@
     "is_vc_fund_raise": false
   },
   {
-    "company_name": "Airbnb-backed WeRoad",
-    "company_website": null,
-    "company_description": "Milan-based group travel startup",
-    "headquarters_country": null,
-    "headquarters_city": null,
-    "funding_stage": "Series C",
-    "funding_amount": 58000000.0,
-    "currency": "USD",
-    "original_amount_text": "$58M",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-05-27",
-    "lead_investor": "Airbnb as it prepares for its first major expansion outside Europe",
-    "investors": [
-      "Airbnb as it prepares for its first major expansion outside Europe"
-    ],
-    "source_url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us",
-    "source_name": "TechCrunch",
-    "article_title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US",
-    "supporting_evidence": {
-      "company_name": "Airbnb-backed WeRoad raises $58",
-      "funding_amount": "Airbnb-backed WeRoad raises $58M to take its group travel platform to th",
-      "funding_stage": "Series C",
-      "investors": "led by Airbnb as it prepares for its first major expansion outside Europe."
-    },
-    "is_vc_fund_raise": false
-  },
-  {
     "company_name": "Viral AI  Instinct has",
     "company_website": null,
     "company_description": "startup founded only last year and helmed by a 23-year-old",
@@ -691,32 +663,30 @@
     "is_vc_fund_raise": false
   },
   {
-    "company_name": "Convective Capital",
+    "company_name": "Wispr",
     "company_website": null,
     "company_description": null,
-    "headquarters_country": "United States",
+    "headquarters_country": null,
     "headquarters_city": null,
-    "funding_stage": "Other",
-    "funding_amount": 85000000.0,
+    "funding_stage": "Series B",
+    "funding_amount": 280000000.0,
     "currency": "USD",
-    "original_amount_text": "$85 million",
+    "original_amount_text": "$280M",
     "is_undisclosed": false,
     "announcement_date": null,
-    "article_publication_date": "2026-05-21",
-    "lead_investor": "Bill Clerico",
+    "article_publication_date": "2026-08-17",
+    "lead_investor": "Menlo Ventures",
     "investors": [
-      "Bill Clerico",
-      "institutions",
-      "including insurance companies",
-      "asset managers"
+      "Menlo Ventures"
     ],
-    "source_url": "https://techcrunch.com/2026/05/21/convective-capital-raises-an-85-million-fund-to-build-disaster-resilience",
+    "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
     "source_name": "TechCrunch",
-    "article_title": "Convective Capital raises an $85 million fund to build disaster resilience",
+    "article_title": "Wispr raises $280M at $2B valuation as it looks beyond dictation",
     "supporting_evidence": {
-      "company_name": "Convective Capital raises an $85",
-      "funding_amount": "Convective Capital raises an $85 million fund to build disaster resilience\n\nFire",
-      "investors": "led by Bill Clerico,; backed by institutions, including insurance companies and asset managers."
+      "company_name": "Wispr raises $280",
+      "funding_amount": "Wispr raises $280M at $2B valuation as it looks beyond dic",
+      "funding_stage": "Series B",
+      "investors": "led by Menlo Ventures,"
     },
     "is_vc_fund_raise": false
   },
@@ -749,30 +719,60 @@
     "is_vc_fund_raise": false
   },
   {
-    "company_name": "Wispr",
+    "company_name": "Airbnb-backed WeRoad",
     "company_website": null,
-    "company_description": null,
+    "company_description": "Milan-based group travel startup",
     "headquarters_country": null,
     "headquarters_city": null,
-    "funding_stage": "Series B",
-    "funding_amount": 280000000.0,
+    "funding_stage": "Series C",
+    "funding_amount": 58000000.0,
     "currency": "USD",
-    "original_amount_text": "$280M",
+    "original_amount_text": "$58M",
     "is_undisclosed": false,
     "announcement_date": null,
-    "article_publication_date": "2026-08-17",
-    "lead_investor": "Menlo Ventures",
+    "article_publication_date": "2026-05-27",
+    "lead_investor": "Airbnb as it prepares for its first major expansion outside Europe",
     "investors": [
-      "Menlo Ventures"
+      "Airbnb as it prepares for its first major expansion outside Europe"
     ],
-    "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
+    "source_url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us",
     "source_name": "TechCrunch",
-    "article_title": "Wispr raises $280M at $2B valuation as it looks beyond dictation",
+    "article_title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US",
     "supporting_evidence": {
-      "company_name": "Wispr raises $280",
-      "funding_amount": "Wispr raises $280M at $2B valuation as it looks beyond dic",
-      "funding_stage": "Series B",
-      "investors": "led by Menlo Ventures,"
+      "company_name": "Airbnb-backed WeRoad raises $58",
+      "funding_amount": "Airbnb-backed WeRoad raises $58M to take its group travel platform to th",
+      "funding_stage": "Series C",
+      "investors": "led by Airbnb as it prepares for its first major expansion outside Europe."
+    },
+    "is_vc_fund_raise": false
+  },
+  {
+    "company_name": "Convective Capital",
+    "company_website": null,
+    "company_description": null,
+    "headquarters_country": "United States",
+    "headquarters_city": null,
+    "funding_stage": "Other",
+    "funding_amount": 85000000.0,
+    "currency": "USD",
+    "original_amount_text": "$85 million",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-05-21",
+    "lead_investor": "Bill Clerico",
+    "investors": [
+      "Bill Clerico",
+      "institutions",
+      "including insurance companies",
+      "asset managers"
+    ],
+    "source_url": "https://techcrunch.com/2026/05/21/convective-capital-raises-an-85-million-fund-to-build-disaster-resilience",
+    "source_name": "TechCrunch",
+    "article_title": "Convective Capital raises an $85 million fund to build disaster resilience",
+    "supporting_evidence": {
+      "company_name": "Convective Capital raises an $85",
+      "funding_amount": "Convective Capital raises an $85 million fund to build disaster resilience\n\nFire",
+      "investors": "led by Bill Clerico,; backed by institutions, including insurance companies and asset managers."
     },
     "is_vc_fund_raise": false
   },
@@ -1048,6 +1048,34 @@
     "is_vc_fund_raise": false
   },
   {
+    "company_name": "Zavya",
+    "company_website": null,
+    "company_description": null,
+    "headquarters_country": null,
+    "headquarters_city": null,
+    "funding_stage": "Series A",
+    "funding_amount": 226000000.0,
+    "currency": "INR",
+    "original_amount_text": "\u20b922.6 Cr",
+    "is_undisclosed": false,
+    "announcement_date": null,
+    "article_publication_date": "2026-11-23",
+    "lead_investor": null,
+    "investors": [
+      "existing investor Orios Venture Partners"
+    ],
+    "source_url": "https://inc42.com/buzz/zavya-nets-%E2%82%B922-6-cr-to-scale-everyday-silver-jewellery-biz",
+    "source_name": "Inc42",
+    "article_title": "Zavya Nets \u20b922.6 Cr To Scale Everyday Silver Jewellery Biz",
+    "supporting_evidence": {
+      "company_name": "Zavya Nets \u20b922.6",
+      "funding_amount": "Zavya Nets \u20b922.6 Cr To Scale Everyday Silver Jewellery Biz",
+      "funding_stage": "Series A",
+      "investors": "with participation from existing investor Orios Venture Partners."
+    },
+    "is_vc_fund_raise": false
+  },
+  {
     "company_name": "Motilal Oswal AMC",
     "company_website": "https://fleekies.ai",
     "company_description": "quick commerce unicorn",
@@ -1077,34 +1105,6 @@
       "funding_amount": "es and collectively mopping up a record \u20b941,248 Cr from the public markets. The surge was",
       "funding_stage": "growth",
       "investors": "led by QIBs and NIIs.; backed by marquee names such as Vertex Ventures, Krafton, IFC and Paramark Ventures."
-    },
-    "is_vc_fund_raise": false
-  },
-  {
-    "company_name": "Zavya",
-    "company_website": null,
-    "company_description": null,
-    "headquarters_country": null,
-    "headquarters_city": null,
-    "funding_stage": "Series A",
-    "funding_amount": 226000000.0,
-    "currency": "INR",
-    "original_amount_text": "\u20b922.6 Cr",
-    "is_undisclosed": false,
-    "announcement_date": null,
-    "article_publication_date": "2026-11-23",
-    "lead_investor": null,
-    "investors": [
-      "existing investor Orios Venture Partners"
-    ],
-    "source_url": "https://inc42.com/buzz/zavya-nets-%E2%82%B922-6-cr-to-scale-everyday-silver-jewellery-biz",
-    "source_name": "Inc42",
-    "article_title": "Zavya Nets \u20b922.6 Cr To Scale Everyday Silver Jewellery Biz",
-    "supporting_evidence": {
-      "company_name": "Zavya Nets \u20b922.6",
-      "funding_amount": "Zavya Nets \u20b922.6 Cr To Scale Everyday Silver Jewellery Biz",
-      "funding_stage": "Series A",
-      "investors": "with participation from existing investor Orios Venture Partners."
     },
     "is_vc_fund_raise": false
   }

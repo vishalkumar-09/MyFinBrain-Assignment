@@ -121,6 +121,24 @@ def run_discover(args) -> None:
         logger.warning("Could not save discovery summary: %s", exc)
 
     result.print_summary()
+
+    # Persist discovered articles to database
+    try:
+        from database.repository import DatabaseRepository
+        repo = DatabaseRepository()
+        for art in result.articles:
+            repo.save_article(
+                url=art.url,
+                canonical_url=art.canonical_url,
+                title=art.title,
+                source_name=art.source_name,
+                published_at=art.published_at,
+                article_text=art.full_text or art.summary,
+                extraction_status=art.extraction_status.value if hasattr(art.extraction_status, "value") else str(art.extraction_status),
+            )
+    except Exception as exc:
+        logger.debug("Could not save discovered articles to database: %s", exc)
+
     return result.articles
 
 
