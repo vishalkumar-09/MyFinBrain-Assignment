@@ -62,17 +62,36 @@ _UNDISCLOSED_REGEX = re.compile(
     re.IGNORECASE,
 )
 
-# Negative context: VC fund / Fund close (distinguish from company funding)
+# Negative context: VC fund / Fund close / Hedge fund LP raise (distinguish from company funding)
 _VC_FUND_CONTEXT = re.compile(
-    r"\b(?:closes?|closed|launch(?:es|ed)?|raises?|raised)\s+(?:its\s+)?(?:\$[\d.]+[MBKmbk]?\s+)?(?:debut\s+|inaugural\s+|new\s+|first\s+|second\s+|third\s+|venture\s+)?fund\b"
+    r"\b(?:closes?|closed|launch(?:es|ed)?|raises?|raised|hits?|marks?|unveils?|unveiled|commits?|committed)\s+(?:its\s+|a\s+)?(?:[^\.]{0,55}?\s+)?(?:debut|inaugural|new|first|second|third|fourth|fifth|sixth|seventh|eighth|venture|growth|private\s+equity|private\s+credit|real\s+estate\s+debt|senior\s+infrastructure\s+debt|infrastructure\s+debt|debt|credit|investment|pre-ipo|deeptech|deep-tech|special\s+situations|consumer)\s+(?:fund|pool|vehicle|strategy|vintage)\b"
+    r"|\b(?:first|final|second)\s+close\s+(?:of|for)\s+(?:its\s+|a\s+)?[^\.]{0,40}?\bfund\b"
+    r"|\bFund\s+(?:I|II|III|IV|V|VI|VII|VIII|IX|X|\d+)\b\s+(?:closes?|at|with)"
+    r"|\bcontinuation\s+(?:fund|vehicle)\b"
     r"|\bfund\s+(?:size\s+of|targeting|closed\s+at)\b"
-    r"|\bventure\s+firm\s+raises\b",
+    r"|\b(?:private\s+equity\s+pool|credit\s+strategy|credit\s+fund|venture\s+firm\s+raises|(?:ai-driven\s+|new\s+|newly\s+launched\s+)?hedge\s+fund\s+(?:raises?|closes?|launches?)|fund\s+launch)\b",
     re.IGNORECASE,
 )
 
-# Negative context: Valuation or revenue
+# Negative context: Valuation, revenue, AUM, or cumulative historical totals
 _VALUATION_REVENUE_CONTEXT = re.compile(
-    r"\b(?:valued\s+at|valuation\s+of|post-money\s+valuation|pre-money\s+valuation|revenue\s+of|ARR\s+of|annual\s+revenue)\b",
+    r"\b(?:valued\s+at|valuation\s+of|post-money\s+valuation|pre-money\s+valuation|"
+    r"revenue\s+of|ARR\s+of|annual\s+revenue|in\s+(?:monthly|annual|yearly)?\s*revenue|"
+    r"assets\s+under\s+(?:management|oversight|its\s+oversight)|AUM|"
+    r"mark\s+in\s+(?:private\s+market\s+)?(?:assets|client\s+assets)|"
+    r"in\s+(?:advised\s+|billable\s+|client\s+){0,2}assets\b|"
+    r"assets\s+(?:held\s+on|on\s+its\s+platform|passed|exceed|stand\s+at)|"
+    r"(?:grew\s+)?from\s+(?:rs\.?|₹|\$)\s*[\d,\.]+\s*(?:cr|crore|lakh|lakhs|million|bn)?\s+to)\b"
+    r"|(?<![a-zA-Z])(?:billion|bn|million|mn|crore|cr)\s+(?:mark\s+)?in\s+(?:private\s+market\s+)?(?:assets|client\s+assets|assets\s+on|advised\s+(?:billable\s+)?assets)\b",
+    re.IGNORECASE,
+)
+_PRECEDING_TOTAL_CONTEXT_RE = re.compile(
+    r"\b(?:total\s+(?:capital|funding)\s+raised\s+(?:to|past)|cumulative\s+(?:funding|capital)\s+(?:to|past)|"
+    r"(?:passes?|past)\s+(?:the\s+)?)$",
+    re.IGNORECASE,
+)
+_IMMEDIATE_NON_ROUND_SUFFIX_RE = re.compile(
+    r"^\s*(?:(?:pre-money|post-money)\s+)?valuation\b",
     re.IGNORECASE,
 )
 
@@ -135,9 +154,15 @@ def extract_funding_amount(text: str) -> Optional[ParsedAmount]:
         start, end = match.start(), match.end()
         raw = match.group(0).strip()
 
-        # Check surrounding sentence for valuation or revenue false-positives
-        surrounding = text[max(0, start - 40) : min(len(text), end + 40)]
-        if _VALUATION_REVENUE_CONTEXT.search(surrounding):
+        # Check surrounding sentence for valuation, revenue, AUM, or preceding cumulative total false-positives
+        surrounding = text[max(0, start - 65) : min(len(text), end + 65)]
+        before_immediate = text[max(0, start - 40) : start]
+        after_immediate = text[end : min(len(text), end + 25)]
+        if (
+            _VALUATION_REVENUE_CONTEXT.search(surrounding)
+            or _PRECEDING_TOTAL_CONTEXT_RE.search(before_immediate)
+            or _IMMEDIATE_NON_ROUND_SUFFIX_RE.search(after_immediate)
+        ):
             continue
 
         prefix_curr = match.group("prefix_curr")

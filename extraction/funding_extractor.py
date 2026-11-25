@@ -61,6 +61,7 @@ class ExtractedFundingRound(BaseModel):
     source_url: str
     source_name: str
     article_title: str
+    article_excerpt: Optional[str] = None
     supporting_evidence: dict[str, str] = Field(default_factory=dict)
 
     # Negative flags
@@ -74,6 +75,12 @@ _STAGE_REGEX = re.compile(
 )
 
 
+_PRIOR_STAGE_CONTEXT = re.compile(
+    r"\b(?:previously|earlier|back\s+in|prior\s+to|in\s+202[0-5])\b",
+    re.IGNORECASE,
+)
+
+
 def extract_funding_stage(text: str) -> tuple[str, str]:
     """
     Identify funding stage from text and map to canonical name.
@@ -82,8 +89,10 @@ def extract_funding_stage(text: str) -> tuple[str, str]:
     if not text:
         return "Other", ""
 
-    match = _STAGE_REGEX.search(text)
-    if match:
+    for match in _STAGE_REGEX.finditer(text):
+        context_before = text[max(0, match.start() - 55) : match.start()]
+        if _PRIOR_STAGE_CONTEXT.search(context_before):
+            continue
         raw_stage = match.group("stage").strip().lower()
         # Clean hyphen or double space
         clean_key = re.sub(r"\s+", " ", raw_stage)
@@ -98,6 +107,10 @@ def extract_funding_stage(text: str) -> tuple[str, str]:
                 canonical = "Series C"
             elif "series d" in clean_key:
                 canonical = "Series D"
+            elif "series e" in clean_key:
+                canonical = "Series E"
+            elif "series f" in clean_key:
+                canonical = "Series F"
             elif "seed" in clean_key:
                 canonical = "Seed"
             elif "angel" in clean_key:
@@ -179,6 +192,7 @@ class FundingExtractor:
             source_url=article.canonical_url or article.url,
             source_name=article.source_name,
             article_title=title,
+            article_excerpt=body[:4000] if body else None,
             supporting_evidence=evidence,
             is_vc_fund_raise=is_vc_fund,
         )

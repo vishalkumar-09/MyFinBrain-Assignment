@@ -1,100 +1,142 @@
 Company Name,Country,City,Website,Primary Category,Secondary Categories,Relevance Status,Confidence Score,Description
-1Lattice,India,Delhi,https://1lattice.com,Private Markets,,DIRECT_MATCH,0.81,
-AI chip maker SambaNova,,,,,,NOT_RELEVANT,0.85,nine-year-old startup
-AcreTrader,,,https://acretrader.com,,,NOT_RELEVANT,0.85,
-Airbnb-backed WeRoad,,,,,,NOT_RELEVANT,0.85,Milan-based group travel startup
-Altgraaf,India,Bengaluru,https://altgraaf.com,,,NOT_RELEVANT,0.85,
-Altura Markets,United States,New York,https://alturamarkets.com,Private Markets,Wealth Management,DIRECT_MATCH,0.84,
-Altway Markets,United States,Boston,https://altwaymarkets.com,Private Markets,,DIRECT_MATCH,0.81,
-AngelList Venture,United States,San Francisco,https://angellist.com,Private Markets,Adjacent Infrastructure,DIRECT_MATCH,0.84,
-AssetPlus,India,Chennai,https://assetplus.in,Wealth Management,,DIRECT_MATCH,0.81,
-Assetmonk,India,Hyderabad,https://assetmonk.io,,,NOT_RELEVANT,0.85,
-Bharat Semi,United States,New York,,,,NOT_RELEVANT,0.85,
-Botsync,India,,,,,NOT_RELEVANT,0.85,
-Cadre,United States,New York,https://cadre.com,Alternative Investments,,DIRECT_MATCH,0.81,
-Capsule,,,https://frame.io,,,NOT_RELEVANT,0.85,
-Carta,United States,San Francisco,https://carta.com,Private Markets,,DIRECT_MATCH,0.81,
-Compound,United States,San Francisco,https://withcompound.com,Wealth Management,,DIRECT_MATCH,0.81,
-Convective Capital,United States,,,,,NOT_RELEVANT,0.85,
-CrowdStreet,United States,Austin,https://crowdstreet.com,,,NOT_RELEVANT,0.85,
-Cyient Semiconductors,India,Hyderabad,,,,NOT_RELEVANT,0.85,
-Data Security  Matters.AI,India,Bengaluru,https://matters.ai,,,NOT_RELEVANT,0.85,
-DeepSeek reportedly,,,https://z.ai,,,NOT_RELEVANT,0.85,
-Dezerv,India,Mumbai,https://dezerv.in,Wealth Management,,DIRECT_MATCH,0.84,
-Ellevest,United States,New York,https://ellevest.com,Wealth Management,,DIRECT_MATCH,0.81,
-EquityZen,United States,New York,https://equityzen.com,Private Markets,,DIRECT_MATCH,0.81,
-Facet Wealth,,,https://facet.com,Wealth Management,,NEEDS_REVIEW,0.53,
-FarmTogether,United States,San Francisco,https://farmtogether.com,,,NOT_RELEVANT,0.85,
-Farther,United States,New York,https://farther.com,Wealth Management,,DIRECT_MATCH,0.81,
-Fintso,India,Delhi,https://fintso.com,Wealth Management,,DIRECT_MATCH,0.81,
-Fisdom,India,Bengaluru,https://fisdom.com,Wealth Management,,DIRECT_MATCH,0.84,
-Forge Global,United States,San Francisco,https://forgeglobal.com,Private Markets,,DIRECT_MATCH,0.81,
-Fundrise,,,https://fundrise.com,Alternative Investments,,NEEDS_REVIEW,0.53,
-Grip Invest,India,Gurugram,https://gripinvest.in,Alternative Investments,,DIRECT_MATCH,0.84,leading alternative investment marketplace offering fractional ownership in fixed-income assets and corporate bonds
-Groww,India,Bengaluru,https://groww.in,Wealth Management,,DIRECT_MATCH,0.84,
-Hbits,India,Mumbai,https://hbits.co,,,NOT_RELEVANT,0.85,
-IIFL Finance to,,,,,,NOT_RELEVANT,0.85,
-INDmoney,India,Gurugram,https://indmoney.com,Wealth Management,,DIRECT_MATCH,0.84,
-InCred Alternative Finance,India,Mumbai,https://incredmoney.com,Private Markets,,DIRECT_MATCH,0.81,
-Ionic Wealth,India,,,Wealth Management,,DIRECT_MATCH,0.75,wealthtech platform and a subsidiary of Angel One
-Jar,India,Bengaluru,,Wealth Management,,DIRECT_MATCH,0.81,develops an automated micro-investment platform and digital brokerage application
-Jiraaf,India,Bengaluru,https://jiraaf.com,Alternative Investments,,DIRECT_MATCH,0.81,
-Klub,India,Bengaluru,https://klubworks.com,Private Markets,,DIRECT_MATCH,0.81,
-KredX,India,Bengaluru,https://kredx.com,,,NOT_RELEVANT,0.85,
-Last week,,,,,,NOT_RELEVANT,0.85,Commerce Department also
-Linqto,,,https://linqto.com,Private Markets,,NEEDS_REVIEW,0.55,
+Aarden,United States,Seattle,,Alternative Investments,,DIRECT_MATCH,0.81,"Aarden has raised $8 million to expand an artificial intelligence platform that helps landowners, developers, and investors evaluate potential uses and values for large properties."
+AidenAI,India,Hyderabad,,,,NOT_RELEVANT,0.85,"Enterprise AI startup AidenAI has raised $32 Mn (₹297.1 Cr) in a Series A funding round led by growth investment firm A91 Partners, as it looks to expand its AI platform and engineering capabilities."
+Another is Andera,,,,,,NEEDS_REVIEW,0.4,startup that automates corporate audit and compliance tasks and
+Aqua,United States,New York,,Alternative Investments,,DIRECT_MATCH,0.81,next-generation alternatives infrastructure provider
+Arch,United States,New York,,Private Markets,,DIRECT_MATCH,0.84,AI-driven platform for administering and monitoring private markets portfolios
+Axle,,,,Adjacent Infrastructure,,NEEDS_REVIEW,0.55,"Corporate access has become a multi-billion-dollar driver of Wall Street revenue because the meetings that put institutional investors in front of public company executives, analysts, and industry experts shape where cli"
+Balwaan Krishi,India,Jaipur,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"Agritech startup Balwaan Krishi has raised ₹100 Cr (around $10 Mn) in its Series B funding round led by First Bridge India Growth Fund Private Equity, with participation from other institutional investors whose names wer"
+BankSocial,,,,,,NEEDS_REVIEW,0.4,provider of Web3 and AI-powered financial technology
+Bayesline,United States,New York,,Adjacent Infrastructure,,ADJACENT_MATCH,0.84,"Bayesline has completed a $4 million institutional financing round to expand its financial analytics platform, which allows investment managers to build and update custom risk models in seconds."
+Bharat Semi,India,Delhi,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,Indian semiconductor startup
+Bharat Semi,United States,New York,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"Bharat Semi has raised seed funding to develop programmable AI-powered sensors, targeting the growing demand for intelligent, energy-efficient hardware for robotics, vehicles and other machines."
+BharatPe,,,,Alternative Investments,,NEEDS_REVIEW,0.53,Tiger Global-backed fintech startup BharatPe has raised Rs 135 crore (about $14 million) in debt funding ahead of a potential initial public offering (IPO).
+Biotia,United States,New York,,,,NOT_RELEVANT,0.85,"UTIs drive roughly 10.5M office visits and 3M emergency department encounters in the US each year, and the standard workup starts with a urine culture."
+Bitget Wallet,,,,,,NEEDS_REVIEW,0.4,digital asset wallet and payment card provider
+Boba Bhai,United States,,,,,NOT_RELEVANT,0.85,"Bubble tea and Korean street food brand Boba Bhai has raised $18 million in its Series B funding round with participation from US-based Left Lane Capital and BIG Capital, along with existing investor Titan Capital."
+Cari,,,,,,NEEDS_REVIEW,0.4,"Cari has raised $32.5 million in the first tranche of its initial external funding round , with all of the capital coming from banks."
+Centricity,India,Gurugram,,Wealth Management,Adjacent Infrastructure,DIRECT_MATCH,0.87,India-based wealth management platform serving finance and investment professionals
+Charter Space,,,,,,NEEDS_REVIEW,0.4,finalist in last year’s TechCrunch Startup Battlefield
+Circolife,India,Thane,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,Climatetech startup Circolife has netted $4.5 Mn (around ₹40.45 Cr) in a pre-Series A round led by Polycab India’s joint MD Bharat Jaisinghani.
+Citrea,,,,Private Markets,,NEEDS_REVIEW,0.53,application layer for digital assets backed by Founders Fund and Galaxy Ventures
+CoComply,,,,,,NEEDS_REVIEW,0.4,UK RegTech scale-up focused on external workforce compliance
+Cognitive Credit,United States,New York,,Adjacent Infrastructure,,ADJACENT_MATCH,0.87,"provider of corporate credit data, analytics and AI tools"
+Compute Desk,United States,San Francisco,,Alternative Investments,,DIRECT_MATCH,0.81,company’s physical settlement technology
+Concierge Hulp,,,,,,NEEDS_REVIEW,0.4,Household assistance startup Hulp has raised $2.6 Mn (about ₹25 Cr) in a seed funding round led by VC firms Sparrow Capital and BITKRAFT Ventures.
+Confido Health,United States,,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"US-based AI healthtech startup Confido Health has raised $12.5 Mn (about ₹119 Cr) in a Series A extension led by Z47, taking its total Series A funding to $22.5 Mn."
+Cosine Robots,India,Bengaluru,,,,NEEDS_REVIEW,0.7,"Bengaluru-based robotics hardware startup Cosine Robots has raised ₹22.4 Cr (about $2.4 Mn) in a funding round led by Avaana Capital, with participation from WEH Ventures and angel investors."
+Cyient Semiconductors,India,Hyderabad,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"Cyient Semiconductors will use the capital to scale custom-chip development, manufacturing access, and global growth."
+DeepSeek,,,https://z.ai,,,NEEDS_REVIEW,0.4,Just two days after the U.S.
+Defense tech Hadrian,,,,Wealth Management,Adjacent Infrastructure,NEEDS_REVIEW,0.55,Defense tech Hadrian announced on Thursday that it had raised a fresh $1.37 billion round at a valuation of $7.87 billion from a mile-long list of well-known investors.
+Definedge,India,Pune,,Wealth Management,,DIRECT_MATCH,0.81,Pune-based startup had
+Disseqt AI,,,,,,NEEDS_REVIEW,0.4,"AI governance and assurance startup Disseqt AI has raised $8 million in pre-Series A funding round led by Gresham House Ventures, with participation from existing investor Sure Valley Ventures (SVV), Delta Partners and E"
+Dreamteam,United States,,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"AI-native customer relationship management (CRM) platform Dreamteam, cofounded by former Freshworks executives, has emerged out of stealth mode."
+Elio Mortgage,United States,New York,,,,NOT_RELEVANT,0.85,New York-based mortgage company using artificial intelligence across the home loan process
+Erie Foods International,,,,Private Markets,"Wealth Management, Adjacent Infrastructure",NEEDS_REVIEW,0.57,Illinois-based manufacturer of specialty dairy protein ingredients
+Everful,United States,San Francisco,,,,NEEDS_REVIEW,0.7,startup developing artificial intelligence infrastructure for global commerce
+Finpilot,United States,Seattle,,Adjacent Infrastructure,,ADJACENT_MATCH,0.81,AI-native operating system built for institutional capital
+Fission,United States,New York,,Alternative Investments,Private Markets,DIRECT_MATCH,0.87,blockchain-powered FinTech firm developing liquidity infrastructure for tokenised investment funds
+French founder who sold two crypto startups,,,,,,NEEDS_REVIEW,0.4,"Ulys has raised $4M led by Streamlined Ventures for its AI investing assistant, which builds self-custodied portfolios of tokenised stocks, ETFs, gold and crypto."
+Freshworks alums,United States,San Francisco,,,,NOT_RELEVANT,0.85,startup founded by former Freshworks executives
+Global Kiwi Labs,,,,,,NEEDS_REVIEW,0.4,"Global Kiwi Labs has raised $4 million in seed funding to expand TheHUB, a colocation infrastructure platform designed to provide digital asset market participants with equal access to exchanges and trading systems."
+GreenCell Mobility,India,Mumbai,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"Everstone Capital-backed EV startup GreenCell Mobility has raised ₹330 Cr ($34.6 Mn) in an equity funding round led by Impact Fund Denmark to support the rollout of about 4,500 electric buses currently under deployment."
+HIFI,United States,New York,,Private Markets,Adjacent Infrastructure,DIRECT_MATCH,0.85,New York-based provider of infrastructure for stablecoins and tokenised money
+Helcim,,,,,,NEEDS_REVIEW,0.4,"Calgary-based payments platform Helcim has raised $53m in a Series C funding round, taking its valuation to $250m as it looks to capitalise on a gap left by banks retreating from merchant services."
+Hivemind Digital Group,United States,New York,,Wealth Management,Adjacent Infrastructure,DIRECT_MATCH,0.84,Hivemind Digital Group has raised $17 million in strategic financing led by M&G Investments as the asset management platform expands its tokenization infrastructure and investments across digital assets and other emergin
+Homeward,United States,Austin,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,Austin-based PropTech and FinTech company specialising in cash-backed home financing
+Humyn Labs,United States,San Francisco,,,,NEEDS_REVIEW,0.7,Physical AI startup Humyn Labs has raised $47 Mn (about ₹439 Cr) to expand its data collection and robot deployment operations.
+Implicity,United States,Cambridge,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,Implicity has raised $40 million in growth equity funding to accelerate U.S.
+In the interim,United States,New York,https://bit-digital.com,,,NOT_RELEVANT,0.85,Company is reducing its
+InPrime Finserv,India,Bengaluru,,,,NEEDS_REVIEW,0.7,"Bengaluru-based InPrime Finserv has raised Rs 101 crore (approximately $10.7 million) in a Series B funding round led by FMO, the Dutch entrepreneurial development bank."
+Index Industries,,,https://securities.io,Adjacent Infrastructure,,NEEDS_REVIEW,0.53,financial technology company developing infrastructure for housing-linked investment products
+India's capital markets,,,,Alternative Investments,,NEEDS_REVIEW,0.53,"Equity market cap crosses $5 trillion as IPOs, corporate bonds and AIFs fuel business financing"
+Indian FinTechs,India,Gurugram,,Wealth Management,Adjacent Infrastructure,DIRECT_MATCH,0.84,"provider of composable platforms for CRM, data management, lending and AI agent solutions, which"
+Ionic Wealth,India,Mumbai,https://equitypandit.in,Wealth Management,,DIRECT_MATCH,0.84,"Ionic Wealth, Angel One's wealth management arm, has raised Rs 177 crore in a strategic funding round from its parent company and marquee families, the company said in a media statement on November 23."
+Jewellery brand Zavya,India,Gurugram,,,,NOT_RELEVANT,0.85,"Gurugram-based everyday silver jewellery brand Zavya has raised Rs 22.6 crore ($2.5 million) in a pre-Series A funding round from Daksham Growth Ventures (DGV), the growth investment arm of Daksham Capital, and existing "
+Kalepa,United States,New York,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,New York-based InsurTech developing artificial intelligence for insurance professionals
+KreditBee,,,,,,NEEDS_REVIEW,0.4,"online credit solutions provider serving young professionals across personal, business and"
+LemonEdge,United States,New York,,Private Markets,,DIRECT_MATCH,0.81,fund accounting platform designed specifically for the private markets sector
+Lemonpeel,India,Mumbai,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"AI video production startup Lemonpeel has raised $1 million in a pre-seed funding round led by Shastra VC, with participation from Rukam Sitara and angel investors."
+Light Frame,,,,Wealth Management,,NEEDS_REVIEW,0.57,provider of core banking and portfolio management software for wealth managers
+Liquid Compute,,,,,,NEEDS_REVIEW,0.4,"Liquid Compute has raised $15 million in seed funding to build a marketplace and financial infrastructure platform for buying, selling, pricing and managing AI computing capacity."
+Litmus Music,,,,,,NEEDS_REVIEW,0.4,Litmus Music has received approximately $475 million in new capital commitments from Carlyle and investment funds managed by KKR.
 Live2.ai,India,Bengaluru,https://live2.ai,,,NOT_RELEVANT,0.85,uses artificial intelligence (AI) to connect social-media intelligence with marketing and commerce
-M1 Finance,United States,Chicago,https://m1.com,Wealth Management,,DIRECT_MATCH,0.81,
-Masterworks,United States,New York,https://masterworks.com,Alternative Investments,,DIRECT_MATCH,0.81,
-Matiks,India,Bengaluru,,,,NOT_RELEVANT,0.85,
-Meridian,,,,,,NOT_RELEVANT,0.85,
+Lumov,India,Bengaluru,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"Bengaluru-based D2C orthopaedic products brand Lumov is in talks to raise around ₹33 Cr (about $3.5 Mn) in a funding round led by Peak XV’s Surge programme, sources told Inc42."
+MSCI,United States,,,Private Markets,Wealth Management,DIRECT_MATCH,0.78,index and analytics provider listed on the NYSE
+Maple,United States,San Francisco,,,,NOT_RELEVANT,0.85,"As AI assistants evolve into more capable agents that can access our files, emails, calendar, browser, and more, the amount of trust we’re expected to place in AI companies is growing."
+Marble,United States,New York,https://unite.ai,Private Markets,,DIRECT_MATCH,0.81,capital markets firm focused on frontier markets and AI infrastructure finance
+Matiks,India,Bengaluru,,,,NEEDS_REVIEW,0.7,"The company said it will use the funding to expand internationally, develop new games and social experiences, and launch an artificial intelligence (AI)-powered game creation platform that will enable users to build and "
+Matters.AI,,,https://matters.ai,,,NEEDS_REVIEW,0.4,"Data security startup Matters.AI is raising Rs 110 crore ($11.5 million) in its pre-Series A funding round led by Tanglin Ventures, with participation from existing investors."
+Menos AI,United States,San Jose,,Alternative Investments,Adjacent Infrastructure,DIRECT_MATCH,0.84,AI-native platform built for institutional investors
 Metasports Interactive,India,Hyderabad,,,,NOT_RELEVANT,0.85,Hyderabad-based maker of cricket strategy game Hitwicket
-Model ML,,,,,,NOT_RELEVANT,0.85,comes a year after its $75 million Series A round was
-Moonfare,United States,New York,https://moonfare.com,Private Markets,,DIRECT_MATCH,0.81,
-Motilal Oswal AMC,India,,https://fleekies.ai,,,NOT_RELEVANT,0.85,quick commerce unicorn
-NABARD-backed NABVENTURES,India,,,,,NOT_RELEVANT,0.85,venture capital arm of the National Bank for Agriculture and Rural Development (NABARD)
-NIIF to boost infra projects,India,,,,,NOT_RELEVANT,0.85,
-On Monday,,,,,,NOT_RELEVANT,0.85,newly public AI company
-Origin,United States,San Francisco,https://useorigin.com,Wealth Management,,DIRECT_MATCH,0.81,
-Pant Project,,,,,,NOT_RELEVANT,0.85,premium menswear label specialising in trousers and other bottomwear
+Mochatrade,United States,New York,,Wealth Management,,DIRECT_MATCH,0.87,New York-based platform offering tokenised US equities to traders in India
+Mogul,United States,"Washington, D.C.",,Alternative Investments,,DIRECT_MATCH,0.81,PropTech platform that uses AI to open up real estate investing
+NEPRA,India,Ahmedabad,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"Ahmedabad-based waste management startup NEPRA has raised ₹110 Cr (about $11.7 Mn) in an equity funding round from the Private Infrastructure Development Group (PIDG), a London-based infrastructure development and financ"
+Nevis,United States,New York,,Wealth Management,,DIRECT_MATCH,0.87,WealthTech developing an AI operating system for wealth management
+Nexedge Capital,India,Delhi,,Wealth Management,,DIRECT_MATCH,0.9,"Nexedge Capital said it will use this funding for enhancing its tech platform, hiring, and to come out with new offerings."
+Nova Spectral AI,India,Bengaluru,,,,NEEDS_REVIEW,0.7,"Bengaluru-based Nova Spectral AI has raised ₹21.2 Cr ($2.3 Mn) in a seed funding round led by Shastra VC, with participation from Equirus InnovateX Fund and angel investors."
+Orthopaedic healthcare OSSO,India,Gurugram,,,,NEEDS_REVIEW,0.7,Gurugram-based orthopaedic healthcare startup OSSO has raised Rs 2.5 crore as part of its extended seed funding round.
+PERPTools,,,,Wealth Management,,NEEDS_REVIEW,0.53,"PERPTools has raised a $5 million seed round at an $80 million fully diluted valuation, bringing the AI-native perpetuals trading platform’s total funding to $8 million across two token rounds."
+Pandit,,,,,,NEEDS_REVIEW,0.4,former CEO of Citigroup
+Pant Project,,,,,,NEEDS_REVIEW,0.4,premium menswear label specialising in trousers and other bottomwear
+Pave Finance,United States,New York,,Wealth Management,,DIRECT_MATCH,0.84,AI-powered portfolio management platform built for financial advisors
+Payhawk,,,,,,NEEDS_REVIEW,0.4,Sofia-founded spend management and finance platform
 Peppermint Robotics,United States,Austin,,,,NOT_RELEVANT,0.85,makes autonomous cleaning robots
-Percent,United States,New York,https://percent.com,Private Markets,,DIRECT_MATCH,0.81,
-Planify,India,Gurugram,https://planify.in,Private Markets,,DIRECT_MATCH,0.81,
-PowerUp Money,India,Bengaluru,,Wealth Management,,DIRECT_MATCH,0.87,wealthtech platform offering mutual fund advice and digital wealth management services
-Precize,India,Gurugram,https://precize.in,Private Markets,,DIRECT_MATCH,0.81,develops a pre-IPO investment platform and unlisted shares marketplace
-PropShare,India,Bengaluru,https://propsharecapital.com,Alternative Investments,,DIRECT_MATCH,0.81,
-Public.com,United States,New York,https://public.com,Wealth Management,,DIRECT_MATCH,0.81,
-Rally Rd,United States,New York,https://rallyrd.com,Alternative Investments,,DIRECT_MATCH,0.81,
-Range,United States,San Francisco,https://range.com,Wealth Management,,DIRECT_MATCH,0.81,
-Republic,United States,New York,https://republic.com,Private Markets,,DIRECT_MATCH,0.81,
-Roofstock,,,https://roofstock.com,Alternative Investments,,NEEDS_REVIEW,0.53,
-Rotoris,India,Gurugram,,,,NOT_RELEVANT,0.85,
-Sam Altman-backed Coco Robotics,United States,Los Angeles,,,,NOT_RELEVANT,0.85,
-Scripbox,India,Bengaluru,https://scripbox.com,Wealth Management,,DIRECT_MATCH,0.81,
-Securitize,United States,San Francisco,https://securitize.io,Private Markets,,DIRECT_MATCH,0.81,
-Seeds Fincap Pvt Ltd,,,,,,NOT_RELEVANT,0.85,non-baking financial company (NBFC) supporting small Indian businesses
-Serval,,,,,,NOT_RELEVANT,0.85,enterprise AI company that
-Strata,India,Bengaluru,https://strata.co,Alternative Investments,,DIRECT_MATCH,0.81,
-Style Union,India,,,,,NOT_RELEVANT,0.85,parent company of value-fashion retailer Style Union
-Substack,,,,,,NOT_RELEVANT,0.85,
-Supertake,,,,,,NOT_RELEVANT,0.85,
-Thrive,,,,,,NOT_RELEVANT,0.85,
-Titan,United States,New York,https://titan.com,Wealth Management,,DIRECT_MATCH,0.81,
-Tyke,India,Mumbai,https://tykeinvest.com,Private Markets,,DIRECT_MATCH,0.81,
-UnlistedKart,India,Bengaluru,https://unlistedkart.com,,,NOT_RELEVANT,0.85,
-VC  2150,,,,,,NOT_RELEVANT,0.85,
-VC funding rebounds as startups,India,,,,,NOT_RELEVANT,0.85,
-ValueQuest Investment Advisors,India,Mumbai,,,,NOT_RELEVANT,0.85,Mumbai-based investment manager
-Vinovest,United States,Los Angeles,https://vinovest.co,Alternative Investments,,DIRECT_MATCH,0.81,
-Viral AI  Instinct has,,,,,,NOT_RELEVANT,0.85,startup founded only last year and helmed by a 23-year-old
-Vivriti Asset Tech,India,Chennai,https://credavenue.com,Private Markets,,DIRECT_MATCH,0.81,
-Wealthfront,United States,Palo Alto,https://wealthfront.com,Wealth Management,,DIRECT_MATCH,0.81,
-Wealthy,India,Bengaluru,https://wealthy.in,Wealth Management,,DIRECT_MATCH,0.81,
-Wint Wealth,India,Bengaluru,https://wintwealth.com,,,NOT_RELEVANT,0.85,
-Wispr,,,,,,NOT_RELEVANT,0.85,
-Yieldstreet,United States,New York,https://yieldstreet.com,Alternative Investments,,DIRECT_MATCH,0.81,
-Zanbato,,,https://zanbato.com,Private Markets,,NEEDS_REVIEW,0.53,
-Zavya,,,,,,NOT_RELEVANT,0.85,
-critically,,,https://t.co,,,NOT_RELEVANT,0.85,dalliance with a suspected Chinese spy)
-eri Credits and Capital Limited,India,,,Wealth Management,,DIRECT_MATCH,0.75,listed Indian company with interests including securities and investments
-thin 24 hours of my first story,,,,,,NOT_RELEVANT,0.85,board of trustees
+Physical AI Humyn Labs,India,Bengaluru,,,,NOT_RELEVANT,0.85,Bengaluru-based Humyn Labs has raised $47 million in a Series A round comprising equity and debt.
+Pinegap,United States,New York,,Adjacent Infrastructure,,ADJACENT_MATCH,0.87,Institutional buy-side equity research has long been one of the most information-intensive jobs in finance: analysts tracking 20 to 40 companies in their core coverage while monitoring hundreds more must constantly synth
+Pixxel,India,Bengaluru,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,Google-backed spacetech startup Pixxel has raised $100 Mn (about ₹945 Cr) in its Series C funding round co-led by Singapore’s sovereign wealth fund Temasek and UK-based spacetech investor Seraphim.
+Plume,,,,Alternative Investments,,NEEDS_REVIEW,0.53,open finance platform focused on institutional assets
+PowerUp Money,India,Bengaluru,,Wealth Management,,DIRECT_MATCH,0.9,wealthtech platform offering mutual fund advice and digital wealth management services
+Project Eleven,,,,,,NEEDS_REVIEW,0.4,post-quantum security company focused on digital assets
+PropHub,,,,,,NEEDS_REVIEW,0.4,"technology provider serving brokerages, proprietary trading firms, and cryptocurrency trading platforms"
+Provable Markets,United States,New York,,,,NEEDS_REVIEW,0.7,SEC-registered broker-dealer behind the Aurora Alternative Trading System for securities finance
+Raghu Vamsi Aerospace Group,India,Hyderabad,,,,NOT_RELEVANT,0.85,Precision manufacturing and deeptech company Raghu Vamsi Aerospace Group (RVAG) has raised $40 million (around Rs 400 crore) in Series B funding round co-led by Norwest and Skegen Asset Management.
+Recove Ventures,India,Bengaluru,,Unrelated Fintech / Non-Investment,,NEEDS_REVIEW,0.7,"Bengaluru-based Recove Ventures has raised ₹56.3 Cr (slightly over $6 Mn) in a funding round from investors like Samara Capital’s CEO Sumeet Narang, Capri Global, Amit Prakash Sharma Family Trust, 5F World’s Ganesh Natar"
+Repeat founder Ryan Williams,,,,Private Markets,Alternative Investments,NEEDS_REVIEW,0.55,"Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Ja"
+Rotoris,India,Gurugram,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"The Gurugram-based independent luxury watchmaker plans to use the funds for research and development, expanded production, and growing its Rotoris House, its appointment-based space for meeting clients, presence in India"
+Ryan Breslow,,,,,,NEEDS_REVIEW,0.4,hit an $11 billion valuation in early 2022 before plummeting 97% to $300 million
+Ryft,,,,,,NEEDS_REVIEW,0.4,"Manchester-based payments company that builds infrastructure for marketplaces, platforms and multi-location businesses"
+Sanctuary Wealth,United States,Miami,,Private Markets,"Wealth Management, Adjacent Infrastructure",DIRECT_MATCH,0.87,multi-strategy private credit manager overseeing roughly $40bn in assets
+SatSure,India,Bengaluru,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"Space startup SatSure has raised 600 million rupees ($7 million) from a government-backed space technology fund as part of an ongoing 2 billion rupees funding round, the company said on Friday."
+Savvy Wealth,United States,New York,,Wealth Management,,DIRECT_MATCH,0.84,AI-native registered investment advisor for independent financial advisors
+Science,,,,,,NEEDS_REVIEW,0.4,"Science has raised $400 million in Series D financing, bringing its total capital raised since 2021 to more than $900 million."
+Scimplify,India,Bengaluru,,,,NEEDS_REVIEW,0.7,"startup, founded in 2023"
+Shree Anandhaas,India,Coimbatore,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"Coimbatore-based sweets and snacks chain Shree Anandhaas has raised Rs 110 crore in a fresh funding round led by new investor Ayra Ventures, with participation from existing investor A91 Partners, Waterfield Advisors, th"
+Skydance,,,,,,NEEDS_REVIEW,0.4,"Elon Musk has invested approximately $1 billion in the newly formed media company Skydance, according to a new report from Semafor ."
+Sofinnova Partners,,,,,,NEEDS_REVIEW,0.4,"Sofinnova Partners has closed its second crossover fund with €725 million, equivalent to approximately $815 million."
+Spiko,France,,,,,NEEDS_REVIEW,0.4,issuer of tokenised cash funds
+Sprive,,,,,,NEEDS_REVIEW,0.4,AI-driven consumer FinTech app that helps UK homeowners pay down their mortgages faster using everyday spending
+Stable Money,India,Bengaluru,,Wealth Management,,DIRECT_MATCH,0.81,"Wealthtech startup Stable Money has kicked off its Series C funding round, raising Rs 136 crore ($14.3 million) from existing investors."
+Stark Future,,,,Private Markets,Adjacent Infrastructure,NEEDS_REVIEW,0.55,Barcelona-based electric motorcycle manufacturer
+Supertake,United States,New York,,Adjacent Infrastructure,,ADJACENT_MATCH,0.81,AI investing startup Supertake has an interesting premise: What if your “takes” on the market could make you money without you having to pick stocks yourself?
+Synctera,United States,San Francisco,,,,NOT_RELEVANT,0.85,embedded finance and banking as a service (BaaS) platform
+Tereina,United States,Palo Alto,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,Palo Alto-based financial services company backed by SAP
+The/Nudge,India,Chennai,,,,NOT_RELEVANT,0.85,"Google.org is committing $15 million to The/Nudge to develop AI tools that help Indian small businesses access credit, markets and compliance support, alongside local skills training."
+Third Wave Insurance,,,,Alternative Investments,Wealth Management,NEEDS_REVIEW,0.55,retail insurance brokerage platform backed by global alternative asset manager TPG
+Tour24,United States,Dallas,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,provider of self-guided apartment touring technology
+Treble,,,,,,NEEDS_REVIEW,0.4,"Voice AI has emerged as one of the hottest sectors in AI, with investors pouring in billions of dollars to serve use cases ranging from automating customer support and sales calls to creating meeting notetakers and devel"
+Trimble Wealth Advisors,,,,Wealth Management,Adjacent Infrastructure,NEEDS_REVIEW,0.6,"independent financial advisory firm based in Overland Park, Kansas"
+Trucks VC,United States,San Francisco,,,,NEEDS_REVIEW,0.7,specializes in early-stage investing
+VIVA Finance,United States,Atlanta,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,Atlanta-based FinTech offering consumer loans repaid through payroll
+Variational,,,,,,NEEDS_REVIEW,0.4,Variational has raised $110 million in Series B financing at a $1.5 billion valuation to expand its on-chain derivatives trading infrastructure and increase access to traditional financial markets.
+VastAdvisor,,,,Wealth Management,,NEEDS_REVIEW,0.53,AI-powered Organic Growth OS for wealth management firms
+Veriqus,India,Mumbai,,Wealth Management,,DIRECT_MATCH,0.84,Wealthtech startup Veriqus Group has raised ₹387 Cr (about $40.1 Mn) in a funding round led by global VC firm Norwest.
+VestGen Wealth Partners,United States,Chicago,,Wealth Management,,DIRECT_MATCH,0.84,wealth management business focused on tackling advisor succession while serving clients across multiple generations
+VitriVax,,,,,,NEEDS_REVIEW,0.4,VitriVax has closed an oversubscribed $87 million Series C to move its Lyme disease vaccine candidate into a first-in-human clinical trial and expand its proprietary vaccine pipeline.
+Voyage Labs,United States,Menlo Park,,,,NEEDS_REVIEW,0.7,"Voyage Labs has raised $12 million in seed funding to develop Atlas, a personal AI agent designed to plan, book, and manage travel and local activities."
+VulcanForms,United States,Boston,,,,NOT_RELEVANT,0.85,Boston-based advanced digital manufacturing company
+Wally,United States,New York,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"American dentistry pays practices to repair decay, so the industry has little reason to prevent it, and insurance reimbursement rules and private equity consolidation push that incentive even harder."
+WearOptimo,,,,,,NEEDS_REVIEW,0.4,WearOptimo has raised A$7.75 million to advance its minimally invasive health-monitoring technology and achieve key product and commercial milestones ahead of a planned Series A round.
+Wispr,,,,,,NEEDS_REVIEW,0.4,startup known for its AI dictation tool
+Your final chance,,,,,,NEEDS_REVIEW,0.4,Tomorrow at 8 a.m.
+Yulu,India,Bengaluru,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,mobility-as-a-service startup platform
+Zenzap,,,,,,NEEDS_REVIEW,0.4,"Many businesses around the world use consumer-facing chat apps like WhatsApp, Telegram, Discord, or iMessage to talk and coordinate with staff, and exchange documents or data."
+Zepto,,,,,,NEEDS_REVIEW,0.4,"Zepto to raise Rs 1,000 Cr in pre-IPO round at $4.5B valuation; public listing delayed"
+Zomint,India,Gurugram,,Wealth Management,Adjacent Infrastructure,DIRECT_MATCH,0.87,Wealthtech startup Zomint has raised ₹36 Cr (about $3.7 Mn) in a seed funding round from Lightspeed and Prime Venture Partners.
+altM,India,Bengaluru,,,,NEEDS_REVIEW,0.7,Cleantech startup altM has raised $10.3 Mn (₹97.5 Cr) in a Series A funding round led by new investors Rainmatter and Mela Ventures.
+chip maker SambaNova,United States,Palo Alto,,,,NEEDS_REVIEW,0.7,nine-year-old startup
+erad,,,,,,NEEDS_REVIEW,0.4,"erad , a Riyadh-based alternative financing provider for small and medium-sized enterprises, has closed a $22m (SAR 78.75m) Series A round."
+finny,India,Bengaluru,https://finny.club,Wealth Management,,DIRECT_MATCH,0.84,"finny , a WealthTech start-up offering personalised financial advice, has reportedly secured Rs 5.3 Cr (around $560,000) through an angel round, according to a report from BW Disrupt ."
+mistEO,India,Thiruvananthapuram,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"Thiruvananthapuram-based climate and weather intelligence startup mistEO has raised Rs 18 crore in a seed round led by MGF-Kavachh, a SEBI-registered Category II Alternative Investment Fund that invests in defence and st"
+slice,India,Bengaluru,,Unrelated Fintech / Non-Investment,,NOT_RELEVANT,0.9,"Fintech unicorn turned small finance bank (SFB) slice is set to raise around $100 Mn in fresh funding at a valuation of $450 Mn-$465 Mn, marking a sharp decline from the startup’s last valuation of around $1.25 Bn, sourc"
+tZERO,United States,Salt Lake City,,Private Markets,,DIRECT_MATCH,0.81,"tZERO Group , a provider of blockchain-based infrastructure for financial markets, has announced a new funding round to support its ongoing growth strategy."

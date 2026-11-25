@@ -63,55 +63,46 @@ class DataExporter:
 
         for comp in companies:
             sec_cats = ", ".join(comp.secondary_categories) if comp.secondary_categories else ""
-            comp_dict = {
-                "Company Name": comp.canonical_name,
-                "Country": comp.headquarters_country or "",
-                "City": comp.headquarters_city or "",
-                "Website": comp.website or "",
-                "Primary Category": comp.primary_category or "",
-                "Secondary Categories": sec_cats,
-                "Relevance Status": comp.relevance_status,
-                "Confidence Score": comp.classification_confidence,
-                "Description": comp.description or "",
-            }
-            comp_data.append(comp_dict)
-
             rounds = self.repo.get_funding_rounds_for_company(comp.id)
-            if not rounds:
-                # Company without recorded round
-                main_dict = {
+
+            is_qualified = (
+                comp.relevance_status in ("DIRECT_MATCH", "ADJACENT_MATCH")
+                and comp.headquarters_country in ("United States", "India")
+            )
+            is_review = comp.relevance_status == "NEEDS_REVIEW"
+
+            # Filter out non-relevant noise from export deliverables
+            if comp.relevance_status == "NOT_RELEVANT" and not comp.headquarters_country:
+                continue
+
+            # Populate Companies sheet/CSV
+            if is_qualified or is_review or comp.headquarters_country in ("United States", "India"):
+                comp_dict = {
                     "Company Name": comp.canonical_name,
                     "Country": comp.headquarters_country or "",
                     "City": comp.headquarters_city or "",
                     "Website": comp.website or "",
-                    "Company Description": comp.description or "",
                     "Primary Category": comp.primary_category or "",
                     "Secondary Categories": sec_cats,
                     "Relevance Status": comp.relevance_status,
-                    "Funding Amount": "",
-                    "Currency": "",
-                    "Funding Round": "",
-                    "Funding Announcement Date": "",
-                    "Article Publication Date": "",
-                    "Lead Investor": "",
-                    "Investors": "",
-                    "Source Name": "",
-                    "Source URL": "",
-                    "Verification Status": comp.relevance_status,
+                    "Confidence Score": comp.classification_confidence,
+                    "Description": comp.description or "",
                 }
-                main_data.append(main_dict)
-                if comp.relevance_status == "NEEDS_REVIEW":
-                    review_data.append({
-                        "Company Name": comp.canonical_name,
-                        "Country": comp.headquarters_country or "",
-                        "City": comp.headquarters_city or "",
-                        "Primary Category": comp.primary_category or "",
-                        "Relevance Status": comp.relevance_status,
-                        "Funding Amount": "",
-                        "Funding Round": "",
-                        "Review Reason": "Classification or location unverified",
-                        "Source URL": "",
-                    })
+                comp_data.append(comp_dict)
+
+            # If company has no rounds but is flagged for review
+            if not rounds and is_review:
+                review_data.append({
+                    "Company Name": comp.canonical_name,
+                    "Country": comp.headquarters_country or "",
+                    "City": comp.headquarters_city or "",
+                    "Primary Category": comp.primary_category or "",
+                    "Relevance Status": comp.relevance_status,
+                    "Funding Amount": "",
+                    "Funding Round": "",
+                    "Review Reason": "Classification or location unverified; no funding round recorded",
+                    "Source URL": comp.website or "",
+                })
 
             for rnd in rounds:
                 inv_str = ", ".join(rnd.investors) if rnd.investors else ""
@@ -125,7 +116,6 @@ class DataExporter:
                     "Lead Investor": rnd.lead_investor or "",
                     "Investors": inv_str,
                 }
-                round_data.append(round_dict)
 
                 # Trace provenance back to article through evidence
                 source_name = ""
@@ -135,7 +125,12 @@ class DataExporter:
                     for ev in rnd.evidence_records:
                         if ev.article:
                             source_name = ev.article.source_name
-                            source_url = ev.article.canonical_url
+                            candidate_url = ev.article.canonical_url or ""
+                            # Only accept URLs that look like real article pages,
+                            # not search/query placeholder URLs.
+                            _search_patterns = ("?s=", "?searchType=", "search?q=", "/search?", "?q=", "?query=")
+                            if candidate_url and not any(p in candidate_url for p in _search_patterns):
+                                source_url = candidate_url
                             if ev.article.published_at:
                                 pub_date = str(ev.article.published_at.date())
                             break
@@ -144,29 +139,36 @@ class DataExporter:
                     source_url = comp.website
                     source_name = "Company Website"
 
-                main_dict = {
-                    "Company Name": comp.canonical_name,
-                    "Country": comp.headquarters_country or "",
-                    "City": comp.headquarters_city or "",
-                    "Website": comp.website or "",
-                    "Company Description": comp.description or "",
-                    "Primary Category": comp.primary_category or "",
-                    "Secondary Categories": sec_cats,
-                    "Relevance Status": comp.relevance_status,
-                    "Funding Amount": rnd.amount or "",
-                    "Currency": rnd.currency or "",
-                    "Funding Round": rnd.funding_stage,
-                    "Funding Announcement Date": str(rnd.announcement_date or ""),
-                    "Article Publication Date": pub_date,
-                    "Lead Investor": rnd.lead_investor or "",
-                    "Investors": inv_str,
-                    "Source Name": source_name,
-                    "Source URL": source_url,
-                    "Verification Status": comp.relevance_status,
-                }
-                main_data.append(main_dict)
+                # Include in Funding Rounds sheet/CSV if qualified or review
+                if is_qualified or is_review:
+                    round_data.append(round_dict)
 
-                if comp.relevance_status == "NEEDS_REVIEW":
+                # Primary Funding Announcements sheet strictly for qualified US & India announcements
+                if is_qualified:
+                    eff_ann_date = str(rnd.announcement_date or pub_date or "")
+                    main_dict = {
+                        "Company Name": comp.canonical_name,
+                        "Country": comp.headquarters_country or "",
+                        "City": comp.headquarters_city or "",
+                        "Website": comp.website or "",
+                        "Company Description": comp.description or "",
+                        "Primary Category": comp.primary_category or "",
+                        "Secondary Categories": sec_cats,
+                        "Relevance Status": comp.relevance_status,
+                        "Funding Amount": rnd.amount or "",
+                        "Currency": rnd.currency or "",
+                        "Funding Round": rnd.funding_stage,
+                        "Funding Announcement Date": eff_ann_date,
+                        "Article Publication Date": pub_date,
+                        "Lead Investor": rnd.lead_investor or "",
+                        "Investors": inv_str,
+                        "Source Name": source_name,
+                        "Source URL": source_url,
+                        "Verification Status": comp.relevance_status,
+                    }
+                    main_data.append(main_dict)
+
+                if is_review or comp.relevance_status == "NEEDS_REVIEW":
                     review_data.append({
                         "Company Name": comp.canonical_name,
                         "Country": comp.headquarters_country or "",
@@ -178,6 +180,10 @@ class DataExporter:
                         "Review Reason": "Ambiguous location or business category",
                         "Source URL": source_url,
                     })
+
+        # Sort deliverables newest-first for analyst readability
+        main_data.sort(key=lambda r: r.get("Funding Announcement Date", ""), reverse=True)
+        round_data.sort(key=lambda r: r.get("Announcement Date", ""), reverse=True)
 
         # Fetch articles from database
         art_data = []
@@ -193,6 +199,7 @@ class DataExporter:
                     "Published Date": str(art.published_at.date() if art.published_at else ""),
                     "Extraction Status": art.extraction_status,
                 })
+        art_data.sort(key=lambda r: r.get("Published Date", ""), reverse=True)
 
         # 2. Export startups.csv
         startups_csv = self.export_dir / "startups.csv"

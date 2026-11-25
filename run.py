@@ -39,16 +39,17 @@ if sys.version_info >= (3, 13) and os.path.exists("/snap/core24/1643/usr/bin/pyt
 
 
 # ===========================================================================
-# ⚙️ USER CONFIGURATION – ADJUST YOUR PIPELINE PARAMETERS HERE
+# USER CONFIGURATION – ADJUST YOUR PIPELINE PARAMETERS HERE
 # ===========================================================================
 
 # 1. Date Range for Funding Announcements (YYYY-MM-DD)
-START_DATE = "2024-11-23"
-END_DATE = "2026-11-23"
+START_DATE = "2026-07-01"
+END_DATE = "2026-11-25"
 
 # 2. Target Number of Extractions to Achieve
-#    Set an integer (e.g. 50, 80, 100, 200) or None to process everything discovered.
-TARGET_EXTRACTIONS = 100
+#    Set an integer (e.g.
+#  50, 80, 100, 200) or None to process everything discovered.
+TARGET_EXTRACTIONS = None
 
 # 3. Pipeline Mode to Run
 #    Options:
@@ -61,18 +62,21 @@ MODE = "all"
 
 # 4. Built-in Data Sources to Query
 #    Available options:
-#      "google_news", "techcrunch", "inc42", "yourstory", "entrackr",
-#      "ettech", "businesswire", "prnewswire", "venturebeat", "sifted", "vccircle"
+#      "techcrunch", "inc42", "yourstory", "entrackr", "ettech",
+#      "fintech_global", "pulse2", "alleywatch", "bing_news",
+#      "prnewswire", "businesswire", "venturebeat", "google_news", "sifted", "vccircle"
 #    Set to None to query all enabled sources.
 ENABLED_SOURCES = [
     "techcrunch",
     "inc42",
     "yourstory",
     "entrackr",
-    "businesswire",
+    "ettech",
+    "fintech_global",
+    "pulse2",
+    "alleywatch",
+    "bing_news",
     "prnewswire",
-    # "venturebeat",   # Uncomment if needed (Cloudflare rate-limits may cause retries)
-    # "google_news",   # Uncomment to query Google News RSS
 ]
 
 # 5. Additional Custom Website Sources to Scrape
@@ -95,10 +99,9 @@ WORKERS = 4
 #    If False, re-evaluates all articles from scratch.
 INCREMENTAL = False
 
-# 8. Include Curated Reference Dataset
-#    If True, merges the comprehensive 85+ reference dataset covering all 4 target sectors
-#    (Private Markets, Alternative Investments, Wealth Management, Adjacents) and edge cases.
-INCLUDE_REFERENCE_DATASET = True
+# 8. Include Static Reference Dataset
+#    Keep False to enforce 100% live, HTTP-verified web discovery across all sources.
+INCLUDE_REFERENCE_DATASET = False
 
 # 9. Output Directory for Deliverables
 OUTPUT_DIR = "data"
@@ -146,7 +149,7 @@ def main() -> int:
     end_d = parse_date(END_DATE)
 
     print("\n" + "=" * 68)
-    print("  🚀 STARTUP FUNDING INTELLIGENCE PIPELINE")
+    print("   STARTUP FUNDING INTELLIGENCE PIPELINE")
     print("=" * 68)
     print(f"  Date Window          : {start_d} → {end_d}")
     print(f"  Target Extractions   : {TARGET_EXTRACTIONS if TARGET_EXTRACTIONS else 'Uncapped'}")
@@ -193,23 +196,59 @@ def main() -> int:
         print("\n[Phase 2/5] Running Content & Funding Extraction...")
         extracted_rounds = run_extract(args, articles=articles)
 
-    # If reference dataset is enabled, blend in curated target announcements
+    # If reference dataset is enabled, blend in curated target announcements strictly matching the date window
     if INCLUDE_REFERENCE_DATASET and MODE in ("extract", "all"):
         from scripts.seed_pipeline import DEAL_ARTICLES
         from extraction.funding_extractor import FundingExtractor
 
-        print(f"\n[Phase 3/5] Ingesting Reference Target Sector Announcements ({len(DEAL_ARTICLES)} deals)...")
+        print(f"\n[Phase 3/5] Ingesting Reference Target Sector Announcements (Filtering by {start_d} → {end_d})...")
         extractor = FundingExtractor()
         seed_rounds = []
         for art in DEAL_ARTICLES:
+            # Check article date against date window
+            if art.published_at:
+                art_d = art.published_at.date() if hasattr(art.published_at, "date") else art.published_at
+                if art_d < start_d or art_d > end_d:
+                    continue
             r = extractor.extract(art)
             if r:
+                r_date = r.announcement_date or r.article_publication_date
+                if r_date:
+                    if hasattr(r_date, "date"):
+                        r_date = r_date.date()
+                    elif isinstance(r_date, str):
+                        try:
+                            r_date = date.fromisoformat(r_date)
+                        except Exception:
+                            r_date = None
+                    if r_date and (r_date < start_d or r_date > end_d):
+                        continue
                 seed_rounds.append(r)
 
-        existing_names = {r.company_name.lower() for r in (extracted_rounds or [])}
+        if extracted_rounds is None:
+            extracted_rounds = []
+        existing_names = {r.company_name.lower() for r in extracted_rounds}
         for sr in seed_rounds:
             if sr.company_name.lower() not in existing_names:
                 extracted_rounds.append(sr)
+
+    # Strictly enforce date filter: discard any deals before start_d (2026-07-01) or after end_d
+    if extracted_rounds:
+        strictly_in_range = []
+        for r in extracted_rounds:
+            deal_d = r.announcement_date or r.article_publication_date
+            if deal_d:
+                if hasattr(deal_d, "date"):
+                    deal_d = deal_d.date()
+                elif isinstance(deal_d, str):
+                    try:
+                        deal_d = date.fromisoformat(deal_d)
+                    except Exception:
+                        deal_d = None
+            if deal_d and (deal_d < start_d or deal_d > end_d):
+                continue
+            strictly_in_range.append(r)
+        extracted_rounds = strictly_in_range
 
     # Apply target extractions cap if specified
     if TARGET_EXTRACTIONS and extracted_rounds:
@@ -225,7 +264,7 @@ def main() -> int:
         exported = run_export(args)
 
     print("\n" + "=" * 68)
-    print("  ✅ PIPELINE RUN COMPLETE")
+    print("  PIPELINE RUN COMPLETE")
     print("=" * 68)
     print(f"  All deliverables have been saved to: {Path(OUTPUT_DIR).resolve()}/")
     print("  • startups_funding.xlsx  (5-sheet professionally formatted Excel)")

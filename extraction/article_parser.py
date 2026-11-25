@@ -14,7 +14,9 @@ Features:
 
 from __future__ import annotations
 
+import json
 import logging
+import re
 from datetime import datetime, timezone
 from typing import Optional
 from bs4 import BeautifulSoup
@@ -52,8 +54,15 @@ class ArticleParser:
         Fetch HTML from URL with redirect following.
         Returns (html_content, final_url).
         """
+        headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+            ),
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        }
         try:
-            resp = self.session.get(url, timeout=self.timeout)
+            resp = self.session.get(url, headers=headers, timeout=self.timeout)
             if resp.status_code == 200:
                 final_url = canonicalize_url(resp.url)
                 return resp.text, final_url
@@ -120,14 +129,48 @@ class ArticleParser:
         if author_meta and author_meta.get("content"):
             author = author_meta["content"].strip()
 
-        # Date extraction
+        # Date extraction (meta tags, JSON-LD, <time>, URL path)
         published_at = None
-        time_meta = soup.find("meta", property="article:published_time") or soup.find("meta", attrs={"name": "pubdate"})
-        if time_meta and time_meta.get("content"):
-            try:
-                published_at = dateutil_parser.parse(time_meta["content"]).astimezone(timezone.utc)
-            except Exception:
-                pass
+        for time_meta in (
+            soup.find("meta", property="article:published_time"),
+            soup.find("meta", property="og:updated_time"),
+            soup.find("meta", itemprop="datePublished"),
+            soup.find("meta", attrs={"name": "pubdate"}),
+            soup.find("meta", attrs={"name": "publishdate"}),
+            soup.find("meta", attrs={"name": "DC.date.issued"}),
+        ):
+            if time_meta and time_meta.get("content"):
+                try:
+                    dt = dateutil_parser.parse(time_meta["content"])
+                    published_at = dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt.astimezone(timezone.utc)
+                    break
+                except Exception:
+                    pass
+
+        if published_at is None:
+            for script in soup.find_all("script", type="application/ld+json"):
+                raw_json = script.string or ""
+                m = re.search(r'"datePublished"\s*:\s*"([^"]+)"', raw_json)
+                if m:
+                    try:
+                        dt = dateutil_parser.parse(m.group(1))
+                        published_at = dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt.astimezone(timezone.utc)
+                        break
+                    except Exception:
+                        pass
+
+        if published_at is None:
+            time_el = soup.find("time", datetime=True)
+            if time_el:
+                try:
+                    dt = dateutil_parser.parse(time_el["datetime"])
+                    published_at = dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt.astimezone(timezone.utc)
+                except Exception:
+                    pass
+
+        # Soft-404 / generic SPA shell guard
+        if body_text and len(body_text.strip()) < 150 and "stories about startups & entrepreneurships" in (title or "").lower():
+            body_text = ""
 
         # Update or construct Article
         if existing_article:
@@ -137,11 +180,11 @@ class ArticleParser:
             else:
                 existing_article.extraction_status = ExtractionStatus.FAILED
 
-            if not existing_article.title and title:
+            if title and (not existing_article.title or existing_article.discovery_query == "sitemap_slug"):
                 existing_article.title = title
             if not existing_article.author and author:
                 existing_article.author = author
-            if not existing_article.published_at and published_at:
+            if published_at and (not existing_article.published_at or existing_article.discovery_query == "sitemap_slug"):
                 existing_article.published_at = published_at
 
             # Recompute content hash

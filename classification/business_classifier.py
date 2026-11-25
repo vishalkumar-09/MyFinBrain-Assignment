@@ -58,52 +58,103 @@ class ClassificationResult(BaseModel):
 # Category Keyword Mappings
 _CATEGORIES = {
     "Private Markets": [
-        "private equity", "private credit", "private debt", "private market",
-        "pre-ipo", "pre ipo", "secondary market", "unlisted share", "unlisted stock",
-        "private investment platform", "private market portfolio", "private asset",
-        "venture secondary", "private capital",
+        "private equity", "private credit", "private debt", "private market", "private markets",
+        "pre-ipo shares", "pre-ipo platform", "pre-ipo marketplace", "pre-ipo investing",
+        "secondary market", "unlisted share", "unlisted stock",
+        "private investment platform", "private market portfolio", "private asset", "private assets",
+        "venture secondary", "private capital", "tokenized capital markets", "tokenised capital markets",
+        "tokenised markets", "tokenized markets",
     ],
     "Alternative Investments": [
-        "alternative investment", "alternative asset", "fractional ownership",
-        "real estate investment platform", "fractional real estate", "hedge fund technology",
+        "alternative investment", "alternative asset", "alternative assets", "alternatives infrastructure",
+        "fractional ownership", "real estate investment platform", "real estate investing",
+        "fractional real estate", "hedge fund technology", "hedge funds",
         "commodities investment", "collectibles investment", "art investment",
         "infrastructure investment", "crypto asset management", "wine investment",
+        "fixed-income", "fixed income", "corporate bonds", "tokenized housing", "tokenised housing",
+        "tokenized real estate", "tokenised assets", "tokenized assets",
+        "tokenised investment funds", "tokenized investment funds",
+        "tokenised funds", "tokenized funds",
+        "private funds", "compute risk markets", "land markets", "asset-backed",
     ],
     "Wealth Management": [
-        "wealth management", "wealthtech", "wealth tech", "digital wealth",
-        "investment advisory", "portfolio management", "family office technology",
-        "family office", "asset management technology", "financial planning platform",
-        "investment management platform", "digital brokerage", "robo-advisor",
-        "robo advisory", "personalized investment", "registered investment advisor", "ria",
+        "wealth management", "wealthtech", "wealth tech", "wealth-tech", "digital wealth",
+        "investment advisory", "financial advisory", "wealth advisory", "portfolio management",
+        "family office technology", "family office software", "for family offices", "family office platform",
+        "asset management technology",
+        "asset management platform", "wealth firm", "wealth firms", "wealth advisor", "wealth advisors",
+        "financial advisor", "financial advisors", "financial advisers", "advisor succession",
+        "financial planning platform", "investment management platform", "digital brokerage",
+        "robo-advisor", "robo advisory", "personalized investment", "registered investment advisor",
+        "ria", "private banking", "stock trading platform", "us stock trading", "trading platform",
+        "mutual fund", "brokerage startup", "will and estate", "estate planning", "succession planning",
+        "wealth creators", "personalized financial advice", "personalised financial advice",
+        "portfolio tech", "portfolio technology", "invest with ai",
     ],
     "Adjacent Infrastructure": [
         "investment infrastructure", "portfolio analytics", "family office software",
-        "private market data", "asset allocation", "investment research",
-        "financial advisory infrastructure", "fund administration software",
-        "capital table management", "cap table",
+        "private market data", "asset allocation", "investment research", "credit research",
+        "corporate credit data", "financial advisory infrastructure", "fund administration software",
+        "capital table management", "cap table", "capital markets infrastructure",
+        "investment management", "investment risk", "risk models", "investment banking",
+        "market predictions into stock portfolios", "due diligence calls", "institutional investors",
+        "institutional capital", "proxy voting", "corporate access", "buy-side", "fintech infrastructure",
+        "equity research", "wealth distribution",
     ],
 }
 
 # Strict Exclusions (Negative Patterns)
 _NEGATIVE_PATTERNS = {
     "Payment-only": re.compile(
-        r"\b(?:payment\s+gateway|merchant\s+acquir(?:ing|er)|pos\s+terminal|payment\s+processing|checkout\s+solution|bill\s+payment|money\s+transfer|remittance|p2p\s+payments?)\b",
+        r"\b(?:payment\s+gateway|merchant\s+acquir(?:ing|er)|pos\s+terminal|payment\s+processing|"
+        r"payments?\s+infrastructure|cross-border\s+payments?|checkout\s+solution|bill\s+payment|"
+        r"money\s+transfer|remittance|p2p\s+payments?)\b",
         re.IGNORECASE,
     ),
     "Lending-only": re.compile(
-        r"\b(?:payday\s+loans?|personal\s+loan\s+app|buy\s+now\s+pay\s+later|bnpl|instant\s+credit|micro-lending|microlending|credit\s+card\s+issuance)\b",
+        r"\b(?:payday\s+loans?|personal\s+loan\s+app|buy\s+now\s+pay\s+later|bnpl|instant\s+credit|"
+        r"micro-lending|microlending|credit\s+card\s+issuance|predatory\s+lending|"
+        r"home\s+financing|mortgage\s+platform|consumer\s+lending|loan\s+servicer|"
+        r"manufactured\s+housing\s+finance|housing\s+finance|preferential\s+issue|digital\s+lending|"
+        r"small\s+finance\s+bank|\bsfb\b|nbfc)\b",
         re.IGNORECASE,
     ),
     "Insurance-only": re.compile(
-        r"\b(?:insurtech|insurance\s+broker|health\s+insurance|auto\s+insurance|life\s+insurance|insurance\s+claims|policy\s+comparison)\b",
+        r"\b(?:insurtech|insurance\s+broker|health\s+insurance|auto\s+insurance|life\s+insurance|"
+        r"insurance\s+claims|policy\s+comparison|insurance\s+underwriting|insurance\s+and\s+mobility|"
+        r"managing\s+general\s+agent|excess\s*(?:&|and)\s*surplus|"
+        r"for\s+lenders\s+and\s+insurers|across\s+insurance)\b",
         re.IGNORECASE,
     ),
     "General E-commerce": re.compile(
-        r"\b(?:online\s+marketplace\s+for\s+goods|e-commerce\s+store|d2c\s+brand|retail\s+shopping|grocery\s+delivery)\b",
+        r"\b(?:online\s+marketplace\s+for\s+goods|e-commerce\s+store|d2c\s+(?:brand|lifestyle|startup)|retail\s+shopping|"
+        r"grocery\s+delivery|quick\s+commerce|instant\s+delivery|luxury\s+watch|watch\s+brand)\b",
         re.IGNORECASE,
     ),
     "Generic Software": re.compile(
-        r"\b(?:hr\s+management\s+software|payroll\s+only|applicant\s+tracking|crm\s+for\s+sales|marketing\s+automation)\b",
+        r"\b(?:hr\s+management\s+software|payroll\s+only|applicant\s+tracking|crm\s+for\s+sales|"
+        r"marketing\s+automation|sales\s+automation|crm\s+space|accounting\s+practices|"
+        r"accounting\s+software|video\s+production\s+(?:startup|platform)|multi-agent\s+video|"
+        r"apartment\s+touring|vendor\s+recovery|firmware|software\s+supply\s+chain|"
+        r"cybersecurity|product\s+security|compliance\s+management\s+software)\b",
+        re.IGNORECASE,
+    ),
+    "Non-Investment Sector": re.compile(
+        r"\b(?:spacetech|space-tech|plastic\s+recycling|circular\s+economy|chip\s+startup|"
+        r"semiconductor|defence\s+manufacturing|defense\s+manufacturing|healthcare\s+administration|"
+        r"dental\s+membership|dentistry|dental\s+(?:care|cleanings|practices)|cardiac|remote\s+monitoring|medtech|"
+        r"hospitality\s+brand|hotel\s+(?:brand|portfolio|chain)|study\s+abroad|edtech|"
+        r"subscription-based\s+air\s+conditioning|air\s+conditioning|climatetech|"
+        r"cold[\s-]chain|logistics\s+provider|"
+        r"compulsorily\s+convertible\s+preference\s+shares|non-banking\s+financ(?:e|ial)|"
+        r"electric\s+bus|electric\s+vehicle|robotaxis?|neocloud|"
+        r"farm\s+equipment|agricultural\s+equipment|lists?\s+on\s+bse)\b",
+        re.IGNORECASE,
+    ),
+    "Fundraise / PE Buyout": re.compile(
+        r"\b(?:real\s+estate\s+debt\s+fund|ai-driven\s+hedge\s+fund|fund\s+launch|"
+        r"debt\s+vintage|infrastructure\s+debt|co-investment\s+vehicles|final\s+close\s+of\s+its|"
+        r"entered\s+into\s+a\s+definitive\s+agreement\s+for\s+funds)\b",
         re.IGNORECASE,
     ),
 }
@@ -123,14 +174,23 @@ class BusinessClassifier:
         """
         Classify a company based on its description, business model, and contextual evidence.
         """
-        combined = f"{company_name}\n{description or ''}\n{article_text or ''}".lower()
+        identity_text = f"{company_name}\n{description or ''}".lower()
+        combined = f"{identity_text}\n{article_text or ''}".lower()
 
-        # 1. Check strict exclusions
+        # 1. Check strict exclusions (hard categories cannot be bypassed by investor-bio noise)
+        _INVESTMENT_IDENTITY_TERMS = (
+            "wealth management", "wealthtech", "private equity",
+            "alternative investment", "private markets",
+        )
+        _HARD_EXCLUSIONS = {"Insurance-only", "Non-Investment Sector", "Generic Software", "General E-commerce", "Fundraise / PE Buyout"}
         for exc_name, pat in _NEGATIVE_PATTERNS.items():
             match = pat.search(combined)
             if match:
-                # Ensure the exclusion isn't negated by an investment focus
-                if not any(k in combined for k in ["wealth management", "private equity", "portfolio management", "alternative investment"]):
+                allow_exemption = (
+                    exc_name not in _HARD_EXCLUSIONS
+                    and any(k in identity_text for k in _INVESTMENT_IDENTITY_TERMS)
+                )
+                if not allow_exemption:
                     return ClassificationResult(
                         primary_category="Unrelated Fintech / Non-Investment",
                         relevance_status=RelevanceStatus.NOT_RELEVANT,

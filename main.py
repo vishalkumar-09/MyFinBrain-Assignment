@@ -177,14 +177,26 @@ def run_extract(args, articles=None) -> list:
     def _process_one_article(article):
         if not article.full_text:
             parser.extract_article(article)
-        return extractor.extract(article)
+        # Filter out articles whose parsed publication date falls outside the target window
+        if article.published_at:
+            pub_d = article.published_at.date() if hasattr(article.published_at, "date") else article.published_at
+            if pub_d < args.start_date or pub_d > args.end_date:
+                return article, None
+        rnd = extractor.extract(article)
+        if rnd:
+            deal_d = rnd.announcement_date or rnd.article_publication_date
+            if deal_d and (deal_d < args.start_date or deal_d > args.end_date):
+                return article, None
+        return article, rnd
 
     workers = min(8, max(2, (args.workers or 1) * 2))
+    processed_articles = []
     with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = {executor.submit(_process_one_article, art): art for art in articles}
         for future in as_completed(futures):
             try:
-                round_data = future.result()
+                art, round_data = future.result()
+                processed_articles.append(art)
                 if round_data:
                     if round_data.is_vc_fund_raise:
                         vc_funds_filtered += 1
@@ -195,6 +207,24 @@ def run_extract(args, articles=None) -> list:
             except Exception as exc:
                 art = futures[future]
                 logger.warning("Error extracting from %s: %s", art.url, exc)
+
+    # Update article extraction statuses & dates in SQLite database
+    try:
+        from database.repository import DatabaseRepository
+        repo = DatabaseRepository()
+        for art in processed_articles:
+            repo.save_article(
+                url=art.url,
+                canonical_url=art.canonical_url or art.url,
+                title=art.title,
+                source_name=art.source_name,
+                published_at=art.published_at,
+                article_text=art.full_text or art.summary,
+                content_hash=art.content_hash,
+                extraction_status=art.extraction_status.value if hasattr(art.extraction_status, "value") else str(art.extraction_status),
+            )
+    except Exception as exc:
+        logger.debug("Could not update extracted articles in database: %s", exc)
 
     # Terminal summary
     sep = "=" * 65
@@ -224,9 +254,11 @@ def run_classify(args, extracted_rounds=None) -> list:
     Classification phase: evaluate business model and verify headquarters against US & India scope.
     """
     from classification.business_classifier import BusinessClassifier, RelevanceStatus
-    from classification.geography_classifier import GeographyClassifier
+    from classification.geography_classifier import GeographyClassifier, GeoStatus
     from classification.relevance_scorer import RelevanceScorer
+    from extraction.article_parser import ArticleParser
     from extraction.funding_extractor import ExtractedFundingRound
+    from sources.verification.company_website import verify_company_hq_live
 
     logger.info("=== CLASSIFY mode ===")
 
@@ -247,6 +279,8 @@ def run_classify(args, extracted_rounds=None) -> list:
     biz_classifier = BusinessClassifier()
     geo_classifier = GeographyClassifier()
     scorer = RelevanceScorer()
+    verify_parser = ArticleParser(timeout=10)
+    hq_cache: dict[str, tuple] = {}
 
     classified_results = []
     stats = {
@@ -257,17 +291,50 @@ def run_classify(args, extracted_rounds=None) -> list:
     }
 
     for rnd in extracted_rounds:
+        lead_context = "\n".join(
+            part for part in (rnd.article_title, rnd.company_description, (rnd.article_excerpt or "")[:700]) if part
+        )
+        full_context = "\n".join(
+            part for part in (rnd.article_title, rnd.company_description, rnd.article_excerpt) if part
+        )
         biz_result = biz_classifier.classify(
             company_name=rnd.company_name,
             description=rnd.company_description,
-            article_text=f"{rnd.article_title} {rnd.company_description or ''}",
+            article_text=lead_context,
         )
         geo_result = geo_classifier.verify(
             company_name=rnd.company_name,
             extracted_city=rnd.headquarters_city,
             extracted_country=rnd.headquarters_country,
-            article_text=f"{rnd.article_title} {rnd.company_description or ''}",
+            article_text=full_context,
         )
+
+        # If sector matches but primary article omitted HQ or city, check official website / corroborating live coverage
+        if (
+            biz_result.relevance_status in (RelevanceStatus.DIRECT_MATCH, RelevanceStatus.ADJACENT_MATCH)
+            and (geo_result.status == GeoStatus.NEEDS_REVIEW or (geo_result.status == GeoStatus.VERIFIED and not geo_result.headquarters_city))
+        ):
+            cache_key = rnd.company_name.lower()
+            if cache_key not in hq_cache:
+                sector_hint = (biz_result.supporting_evidence[0] if biz_result.supporting_evidence else None) or biz_result.primary_category
+                hq_cache[cache_key] = verify_company_hq_live(
+                    company_name=rnd.company_name,
+                    geo_classifier=geo_classifier,
+                    article_parser=verify_parser,
+                    website=rnd.company_website,
+                    lead_investor=rnd.lead_investor,
+                    sector_hint=sector_hint,
+                )
+            verified_geo, corr_url = hq_cache[cache_key]
+            if verified_geo is not None and (
+                geo_result.status == GeoStatus.NEEDS_REVIEW
+                or verified_geo.status == GeoStatus.OUT_OF_SCOPE
+                or (verified_geo.headquarters_country == geo_result.headquarters_country and verified_geo.headquarters_city)
+            ):
+                geo_result = verified_geo
+                if corr_url:
+                    rnd.supporting_evidence["hq_corroboration"] = corr_url
+
         score_result = scorer.score(business=biz_result, geography=geo_result)
 
         stats[score_result.final_status] = stats.get(score_result.final_status, 0) + 1
@@ -364,12 +431,34 @@ def persist_to_database(classified_records: list[dict]) -> None:
         if matched_comp:
             company = matched_comp
             companies_merged += 1
-            # Update missing attributes
+            changed = False
+            # Enrich missing attributes or upgrade NEEDS_REVIEW when corroborating article verifies HQ/category
             if not company.website and website:
                 company.website = website
                 company.website_domain = domain
+                changed = True
             if not company.description and rec.get("company_description"):
                 company.description = rec["company_description"]
+                changed = True
+            if not company.headquarters_country and country:
+                company.headquarters_country = country
+                changed = True
+            if not company.headquarters_city and city:
+                company.headquarters_city = city
+                changed = True
+            if rec.get("relevance_status") in ("DIRECT_MATCH", "ADJACENT_MATCH") and company.relevance_status in ("NEEDS_REVIEW", "NOT_RELEVANT", None):
+                company.relevance_status = rec["relevance_status"]
+                company.classification_confidence = max(company.classification_confidence or 0.0, rec.get("confidence_score", 0.0))
+                if rec.get("primary_category"):
+                    company.primary_category = rec["primary_category"]
+                if rec.get("secondary_categories"):
+                    company.secondary_categories = rec["secondary_categories"]
+                changed = True
+            elif not company.primary_category and rec.get("primary_category"):
+                company.primary_category = rec["primary_category"]
+                changed = True
+            if changed:
+                company = repo.save_company(company)
         else:
             company = Company(
                 canonical_name=comp_name,
@@ -411,6 +500,33 @@ def persist_to_database(classified_records: list[dict]) -> None:
         if matched_round:
             funding_round = matched_round
             rounds_merged += 1
+            round_changed = False
+            if not funding_round.amount and rec.get("funding_amount"):
+                funding_round.amount = rec["funding_amount"]
+                funding_round.currency = rec.get("currency")
+                funding_round.original_amount_text = rec.get("original_amount_text")
+                round_changed = True
+            if funding_round.funding_stage in ("Other", "Undisclosed") and rec.get("funding_stage") not in ("Other", "Undisclosed", None):
+                funding_round.funding_stage = rec["funding_stage"]
+                round_changed = True
+            if not funding_round.announcement_date and ann_date:
+                funding_round.announcement_date = ann_date
+                round_changed = True
+            if not funding_round.lead_investor and rec.get("lead_investor"):
+                funding_round.lead_investor = rec["lead_investor"]
+                round_changed = True
+            new_invs = rec.get("investors") or []
+            if new_invs:
+                existing_invs = list(funding_round.investors or [])
+                merged_invs = list(existing_invs)
+                for inv in new_invs:
+                    if inv.lower() not in {x.lower() for x in merged_invs}:
+                        merged_invs.append(inv)
+                if merged_invs != existing_invs:
+                    funding_round.investors = merged_invs
+                    round_changed = True
+            if round_changed:
+                funding_round = repo.save_funding_round(funding_round)
         else:
             funding_round = FundingRound(
                 company_id=company.id,

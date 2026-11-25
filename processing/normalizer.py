@@ -13,7 +13,8 @@ from typing import Optional
 
 # Corporate entity suffixes to remove when normalizing company names
 _LEGAL_SUFFIXES = re.compile(
-    r"\b(?:inc\.?|incorporated|llc\.?|ltd\.?|limited|pvt\.?\s+ltd\.?|private\s+limited|corp\.?|corporation|technologies|tech|solutions|platform|group)\b",
+    r"\b(?:inc\.?|incorporated|llc\.?|ltd\.?|limited|pvt\.?\s+ltd\.?|private\s+limited|corp\.?|corporation|technologies|tech|solutions|platform|group)\b"
+    r"|\.(?:club|io|ai|co|com|in)\b",
     re.IGNORECASE,
 )
 

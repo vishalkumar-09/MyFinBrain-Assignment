@@ -29,14 +29,23 @@ class ParsedDates(BaseModel):
 # Patterns indicating funding announcement date inside the body
 _ANNOUNCEMENT_DATE_PATTERNS = [
     re.compile(
-        r"\b(?:announced|closed|raised|secured|completed)\s+(?:the\s+round\s+)?on\s+([A-Za-z]+ \d{1,2},? \d{4}|\d{1,2} [A-Za-z]+ \d{4}|\d{4}-\d{2}-\d{2})",
+        r"\b(?:announced|closed|raised|secured|completed|landed)\s+(?:the\s+round\s+|.{0,50}?\s+)?on\s+([A-Za-z]+\.?\s+\d{1,2},?\s+\d{4}|\d{1,2}\s+[A-Za-z]+\.?\s+\d{4}|\d{4}-\d{2}-\d{2})",
         re.IGNORECASE,
     ),
     re.compile(
-        r"\b(?:on\s+)?([A-Za-z]+ \d{1,2},? \d{4}),\s+(?:announced|said|closed)",
+        r"\b(?:on\s+)?([A-Za-z]+\.?\s+\d{1,2},?\s+\d{4}),\s+(?:announced|said|closed)",
         re.IGNORECASE,
     ),
+    # PR Newswire / Business Wire datelines: "NEW YORK, September 09, 2026" or "CHICAGO, Oct. 14, 2026 /PRNewswire/"
+    re.compile(
+        r"\b[A-Z][A-Z\s\.]{2,25},\s+([A-Za-z]{3,9}\.?\s+\d{1,2},\s+\d{4})\b(?:\s*/PRNewswire|\s*--|\s*—|\s*\(BUSINESS WIRE\))?",
+    ),
 ]
+
+_PRIOR_ROUND_CONTEXT = re.compile(
+    r"\b(?:previously|earlier|back\s+in|prior\s+to|last\s+year|founded\s+in|established\s+in)\b",
+    re.IGNORECASE,
+)
 
 
 def parse_iso_or_human_date(date_str: str) -> Optional[date]:
@@ -68,8 +77,11 @@ def extract_announcement_date(article_text: str, publication_date: Optional[date
         return None, None
 
     for pattern in _ANNOUNCEMENT_DATE_PATTERNS:
-        match = pattern.search(article_text)
-        if match:
+        for match in pattern.finditer(article_text):
+            # Ignore historical/prior round dates ("back in December 2025", "previously raised")
+            context_before = article_text[max(0, match.start() - 60) : match.start()]
+            if _PRIOR_ROUND_CONTEXT.search(context_before):
+                continue
             date_snippet = match.group(1).strip()
             parsed = parse_iso_or_human_date(date_snippet)
             if parsed:
@@ -86,6 +98,11 @@ def resolve_dates(
     """Resolve and separate publication date and announcement date."""
     pub_date = published_at.date() if published_at else None
     ann_date, ann_evidence = extract_announcement_date(article_text or "", publication_date=pub_date)
+
+    # For same-day journalism without a separate restated date in prose, use publication date
+    if ann_date is None and pub_date is not None:
+        ann_date = pub_date
+        ann_evidence = f"Same-day news coverage ({pub_date.isoformat()})"
 
     return ParsedDates(
         publication_date=pub_date,

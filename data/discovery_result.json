@@ -1,52 +1,80 @@
 {
-  "start_date": "2024-11-23",
-  "end_date": "2026-11-23",
-  "started_at": "2026-11-24T06:26:07.250650+00:00",
-  "finished_at": "2026-11-24T06:26:29.547568+00:00",
-  "total_discovered": 175,
-  "total_unique": 174,
-  "total_duplicate": 1,
+  "start_date": "2026-07-01",
+  "end_date": "2026-11-25",
+  "started_at": "2026-11-25T13:24:25.954655+00:00",
+  "finished_at": "2026-11-25T13:27:12.818120+00:00",
+  "total_discovered": 756,
+  "total_unique": 748,
+  "total_duplicate": 8,
   "total_errors": 0,
   "sources": [
     {
-      "source_id": "entrackr",
-      "articles_found": 0,
-      "unique_articles": 0,
+      "source_id": "techcrunch",
+      "articles_found": 112,
+      "unique_articles": 111,
+      "errors": [],
+      "success": true
+    },
+    {
+      "source_id": "ettech",
+      "articles_found": 12,
+      "unique_articles": 12,
       "errors": [],
       "success": true
     },
     {
       "source_id": "yourstory",
-      "articles_found": 58,
-      "unique_articles": 58,
+      "articles_found": 40,
+      "unique_articles": 40,
       "errors": [],
       "success": true
     },
     {
-      "source_id": "techcrunch",
-      "articles_found": 97,
-      "unique_articles": 96,
+      "source_id": "fintech_global",
+      "articles_found": 165,
+      "unique_articles": 165,
       "errors": [],
       "success": true
     },
     {
       "source_id": "inc42",
-      "articles_found": 20,
-      "unique_articles": 20,
+      "articles_found": 135,
+      "unique_articles": 135,
+      "errors": [],
+      "success": true
+    },
+    {
+      "source_id": "pulse2",
+      "articles_found": 162,
+      "unique_articles": 162,
+      "errors": [],
+      "success": true
+    },
+    {
+      "source_id": "bing_news",
+      "articles_found": 43,
+      "unique_articles": 38,
       "errors": [],
       "success": true
     },
     {
       "source_id": "prnewswire",
-      "articles_found": 0,
-      "unique_articles": 0,
+      "articles_found": 9,
+      "unique_articles": 9,
       "errors": [],
       "success": true
     },
     {
-      "source_id": "businesswire",
-      "articles_found": 0,
-      "unique_articles": 0,
+      "source_id": "entrackr",
+      "articles_found": 52,
+      "unique_articles": 51,
+      "errors": [],
+      "success": true
+    },
+    {
+      "source_id": "alleywatch",
+      "articles_found": 26,
+      "unique_articles": 25,
       "errors": [],
       "success": true
     }
